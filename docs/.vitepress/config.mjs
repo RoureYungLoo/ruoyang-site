@@ -5,6 +5,16 @@ let sidebar_cpp = "/program-langs/cpp/";
 export default defineConfig({
   title: "禄若阳的笔记",
   description: "禄若阳的笔记",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/favicon.svg",
+      },
+    ],
+  ],
+  lang: "CN",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -187,32 +197,51 @@ export default defineConfig({
           link: "/interviews/scenes/",
         },
       ],
+      // "/code/review/": [
+      //   {
+      //     text: "源码进阶",
+      //     collapsed: false,
+      //     items: [
+      //       { text: "redis", link: "/code/review/redis/" }],
+      //   },
+      // ],
+      "/code/review/redis/": [
+        {
+          text: "Redis源码解析",
+          collapsed: false,
+          items: [
+            { text: "第一讲", link: "/code/review/redis/1" },
+            { text: "第二讲", link: "/code/review/redis/2" },
+            { text: "第三讲", link: "/code/review/redis/3" },
+            { text: "第四讲", link: "/code/review/redis/4" },]
+        },
+      ],
     },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
     notFound: {
-      title:"您正在访问的页面走丢了呢",
-      quote:'快去看看其他页面吧~',
-      linkLabel:'首页',
-      linkText:'前往首页',
-      code:'糟糕',
+      title: "您正在访问的页面走丢了呢",
+      quote: "快去看看其他页面吧~",
+      linkLabel: "首页",
+      linkText: "前往首页",
+      code: "糟糕",
     },
     footer: {
-      message: '基于 MIT 许可发布',
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 禄若阳`
+      message: "基于 MIT 许可发布",
+      copyright: `版权所有 © 2019-${new Date().getFullYear()} 禄若阳`,
     },
     docFooter: {
-      prev: '上一页',
-      next: '下一页'
+      prev: "上一页",
+      next: "下一页",
     },
-    outline:{
-      label:'页面导航'
+    outline: {
+      label: "页面导航",
     },
     editLink: {
-      pattern: 'https://github.com/roueyunloo/',
-      text: '在 GitHub 上编辑此页面'
+      pattern: "https://github.com/roueyunloo/",
+      text: "在 GitHub 上编辑此页面",
     },
   },
 });

@@ -1,132 +1,96 @@
+# 禄若阳 - Java 后端开发
+
+手机：[191-5388-8241](tel:19153888241)  &emsp;&emsp; 邮箱：[ruoyang8241@126.com](mailto:ruoyang8241@126.com)
+
+# 教育及工作经历
+
 <table>
-    <tr style="height: 50px;">
-        <td style="font-size: 1.8em;"><strong>阿杆👨‍💻</strong></td>
-        <td style="font-size: 1.5em;"><strong>求职意向：后端开发</strong></td>
-        <!-- <td rowspan="5">
-            <img src="./image/sticki_avatar.jpg" height="140" alt="">
-        </td> -->
-    </tr>
-    <tr>
-        <td>工作经验：一年</td>
-        <td>电话：sticki</td>
-    </tr>
-    <tr>
-        <td>出生年月：2000年10月</td>
-        <td>邮箱：sticki</td>
-    </tr>
-    <tr>
-        <td>现住址：广东广州</td>
-        <td>教育背景：2023届 XX大学 本科 软件工程</td>
-    </tr>
-    <tr>
-        <td><a href="https://juejin.cn/user/4182956056773160/posts">博客主页</a></td>
-        <td><a href="https://github.com/stick-i">GitHub主页</a></td>
-    </tr>
+<tbody>
+<tr>
+    <td>2017.9-2021.7</td>
+    <td>郑州大学</td>
+    <td>计算机科学与技术</td>
+</tr>
+<tr>
+    <td>2021.7-2022.2</td>
+    <td>郑州浪潮数据</td>
+    <td>云存储研发工程师</td>
+</tr>
+<tr>
+    <td>2023.6-2024.3</td>
+    <td>上海瑞狮网络</td>
+    <td>OpenResty后端开发</td>
+</tr>
+</tbody>
 </table>
-<hr/>
 
-### ==😎专业技能==
+# 专业技能
 
-- 熟悉 **Java** 、**Kotlin** 服务端开发，熟悉 **JVM** 基础知识，如内存模型、垃圾回收等，熟悉 **多线程** 用法
-- 熟悉 **Spring、SpringBoot、Mybatis-Plus** 等常用框架，熟悉 **SpringCloud** 常用组件
+- 具有扎实的计算机基础素养，熟练运用常见数据结构以及常用算法
+- 熟悉 **Java** 基础、**IO**、并发、集合、**JVM**、**GC**、多线程等
+- 熟练 **Nginx**、**Dubbo**、**Redis**、**MQ**、**ES**等主流中间件
+- 熟练 **Spring**、**Spring Boot**、**Spring Cloud** 等主流开源框架
+- 熟悉 **Linux** 操作系统，能够编写 **Shell** 脚本
+- 熟悉 **DevOps** 构建流程及其工具链
+- 具有系统架构设计经验，具有分布式系统的开发、部署经验
 - 熟悉 **MySQL** 数据库，熟悉 **SQL优化** 和 **索引结构** ，熟悉底层 B+树 的结构
 - 熟悉 **Redis** 缓存、分布式锁，熟悉 **ElasticSearch** 分词、搜索，熟练使用 **MQ** 处理异步场景
 - 具备 **分布式微服务** 项目的设计开发经验，有 **Jenkins自动化部署** 经验，有 **Arthas** 排查线上问题的经验
-- [稀土掘金](https://juejin.cn/user/4182956056773160/posts) 优秀创作者，[CSDN](https://blog.csdn.net/little_stick_i?type=blog) 万粉博主，个人公众号 程序员阿杆，**全网阅读量超 80W**
-- 本科期间有10余次省级及以上学科竞赛获奖经历
+
+
+# 项目经历一
+
+<h6 style="display: flex;justify-content: space-between;line-height:3em;">
+    <span>NFS协议开发（C语言）</span><span>浪潮数据 - 云存储研发工程师</span><span>2021.7-2022.2</span>
+</h6>
+
+**项目描述**
+
+&emsp;&emsp;NFS-Ganesha 是一个基于 NFSv3/v4/v4.1 的文件服务器,运行在大多数 Linux 发行版的用户模态下, 支持将 CephFS 通过 FSAL 导出为 NFS<br/>
+
+**主要工作**
+
+1. 使用 Wireshark 工具和 Tcpdump 命令抓包分析 NFSv3 协议操作字，输出 NFSv3 协议操作字文档<br/>
+2. 修改 NFS 的 service 文件内容，修改 config 文件、log 文件权限等支持 nfs 以非 root 用户正常运行<br/>
+3. 驻场支持。协助项目组 TL，负责集群监测工作。定期上报集群运行状态是否正常<br/>
+4. 阅读 NFSv3 源码，分析客户端协议读写文件流程，分析NFS进程启动流程，输出流程分析文档<br/>
+
+**主要收获**
+
+1. 熟悉了 Source Insight、Wireshark、Tcpdump、GDB、CMake、Vim、Git 等工具的使用<br/>
+2. 了解了实际项目的开发和部署流程。深刻体会到了团队成员间的协同工作<br/>
+
+<h6 style="display: flex;justify-content: space-between;line-height:3em;">
+<span>OpenResty后端开发</span>
+<span>上海瑞狮网络</span>
+<span>2023.6-2024.3</span>
+</h6>
+
+**项目描述**
+
+&emsp;&emsp;ADX 是广告交易平台，类似股票交易平台，服务于流量买方（广告主）和流量卖方（媒体），广告主
+可以在 ADX 上投放广告，媒体可以 在 ADX 上售卖流量<br/>
+
+**主要工作**
+1. ADX 媒体技术接入。根据媒体提供的 API 文档，将媒体的广告请求 API 接入到 ADX 系统中，自测并
+进行联调工作，以及后续的文档更新工作，根据广告主的最新文档同步跟进开发
+1. ADX 广告主技术接入。根据广告主提供的 API 文档，对接开发广告主的广告请求 API 到  ADX系统中，
+自测并进行联调工作，以及后续的文档更新工作，根据广告主的最新文档同步跟进开发 
+1. 数据传输方式优化。开发 Protobuf 协议文件，优化 ADX 系统的数据传输方式为 Protobuf ，节省网络
+流量开支
+
+**主要收获**
+
+1. 对程序化广告业务有了一定程度的了解，能够厘清程序化广告各环节间的关系
+2. 对 OpenResty 有了更深入的了解。能够基于 OpenResty 框架开发需求
+3. 提高了业务理解分析能力，能够快速拆分需求，高效完成开发任务
+
 
 <hr/>
 
-### ==🏢工作经历==
-
-<h4 style="display: flex;justify-content: space-between;">
-<span>一、公司名称 - 部门</span><span>Web后台研发</span><span>2023.04 - 至今</span>
-</h4>
-
-- 公司应用的功能版本迭代、开发上线、公共组件库维护、软件技术文档编写；
-- 线上故障定位和解决、性能优化、模块代码重构。
-
-<h4 style="display: flex;justify-content: space-between;">
-<span>二、公司名称 - 部门</span><span>Java后台开发实习</span><span>2022.08 - 2022.12</span>
-</h4>
-
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-
 <hr/>
 
-### ==💻工作项目==
-
-> ps：工作项目的内容都是我瞎写的，仅作为模板参考，并不是真实的项目经历。
-
-<h4 style="display: flex;justify-content: space-between;">
-<span>一、微信小程序</span><span>主力开发</span><span>2024.02 - 2024.04</span>
-</h4>
-项目背景及描述：
-
-- 对公司现有的APP应用开发一款微信小程序，实现了主要的业务功能，提升用户体验和业务效率。
-
-我的工作内容：
-
-- 从 0 到 1 进行项目功能设计、开发、备案、运维、上线等所有工作；
-- 接入微信开放平台和微信商户平台，支持 **微信登录、微信支付**；
-- 接入阿里云OSS，实现服务端签名、客户端直传、服务端接收回调通知的应用方式；
-- 设计并实现 **消息系统**，支持消息群发和单独发送，群发状态下仅存储一条主体消息，节省存储空间。
-
-<h4 style="display: flex;justify-content: space-between;">
-<span>二、根据实际情况填写</span><span>协作开发</span><span>2023.10 - 2024.01</span>
-</h4>
-项目描述：
-
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-
-我的工作内容：
-
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-- 根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写根据实际情况填写
-
-<h4 style="display: flex;justify-content: space-between;">
-<span>三、其他</span><span>2023.05 - 至今</span>
-</h4>
-
-- 优化“xxx”应用，对慢SQL和复杂查询进行排查和优化，**p95延时从4000ms降低到了50ms**；
-- 根据自己实际情况填写
-
-<hr/>
-
-### ==🚀个人项目==
-
-<h4 style="display: flex;justify-content: space-between;">
-<span>一、校园博客</span><span>个人开源项目</span><span>2022.03 - 2022.07</span>
-</h4>
-
-> 基于Spring + Mybatis-Plus + MySQL + Redis + RabbitMQ + ES + Docker + Nacos + Fegin的微服务项目。是个类似于CSDN的博客社区，但博客的推送是基于院校的。**<u>GitHub Star 380+</u>，[开源地址](https://github.com/stick-i/scblogs)，[系统架构图](https://gitee.com/sticki/scblogs/raw/main/document/image/scblogs-framework.png)**。
-
-- 采用 **微服务架构设计开发** ，各服务间通过 **Fegin** 进行同步通信、通过 **RabbitMQ** 进行异步通信；
-- 服务拆分：用户服务、博客服务、网关服务、搜索服务、评论服务、动态服务、资源服务、消息服务；
-- 搭建网关服务，负责路由、鉴权、限流，设计并实现 **缓存** + **异步** 的方式记录请求日志；
-- 设计并实现 **AOP** + **自定义注解** + **Redis** 限制IP接口访问次数，并支持细粒度的访问控制；
-- 基于 **ES** 搭建搜索服务、使用 **Redis** 做系统缓存功能，提升整体访问速度；
-- 基于 **Jenkins** + **Docker** 进行 **自动化部署** 和持续集成，解决微服务项目部署繁琐的问题。
-
-
-<h4  style="display: flex;justify-content: space-between;">
-<span>二、SpEL Validator</span><span>个人开源项目</span><span>2024.04 - 至今</span>
-</h4>
-
-> 基于 SpEL 的参数校验包，也是 javax.validation 的扩展增强包，用于简化参数校验。**<u>GitHub Star 70+</u>，[开源地址](https://github.com/stick-i/spel-validator)**。
-
-- 提供强大的参数校验功能，几乎支持任何场景下的参数校验。扩展自 javax.validation 包，只新增不修改，无缝集成到项目中；
-- 基于 SpEL（Spring Expression Language） 表达式，支持复杂的校验逻辑。支持调用 Spring Bean，可在表达式中使用注入的 Bean 对象；
-- 简单易用，使用方式几乎与 javax.validation 一致，学习成本低，上手快；
-- 无需额外的异常处理，校验失败时会上报到 javax.validation 的异常体系中；
-- 支持自定义校验注解，可根据业务需求自定义校验逻辑。
-
-<hr/>
-
-### ==🏆获奖经历==
+# 自我评价
 
 - 蓝桥杯 <u>算法类</u> 竞赛 - 省赛一等奖 3次、国赛三等奖 2次
 - 中国大学生计算机设计大赛 - 中南地区二等奖
@@ -134,6 +98,10 @@
 - 湖南省优秀毕业生、软件著作权 2项
 
 <style>
+.one{
+    display: flex;
+    justify-content: space-between;
+}
     #write {
         padding: 25px 25px 0px;
     }
@@ -175,8 +143,9 @@
     /* 表格样式，去除边框显示 */
     table, table td, table tr, table th, th {
         font-weight: normal;
-        padding: 3px 13px;
-        border: 0px;
+        padding:0px;
+        border:none;
         background-color: #ffffff;
     }
+
 </style>

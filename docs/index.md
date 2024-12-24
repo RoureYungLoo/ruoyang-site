@@ -6,24 +6,31 @@ hero:
   name: "禄若阳"
   text: "笔记仓库"
   tagline: 持续更新中...
+  image:
+    light: images/logo-light.jpg
+    dark: images/logo-dark.jpg
+    alt: 
   actions:
     - theme: brand
       text: 最近更新
       link: /markdown-examples
+    - theme: brand
+      text: 源码进阶
+      link: /code/review/
 
 features:
   - title: 基础三剑客
     details: HTML CSS JavaScript
   - title: 进阶三框架
     details: React Vue Angular
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: D
-    details: 12312314
-  - title: D
-    details: 12312314
-  - title: 中间件
-    details: Middleware
+  - title: 开发框架
+    details: UniApp Electron Qt
+  - title: Spring 全家桶
+    details: Spring、Spring Boot、Spring Cloud
+  - title: 中间件 全家桶
+    details: MQ、DataBase、分布式组件...
+  - title: 编码规范
+    details: 编码规范
 ---
 
 # 中间件 Middleware
