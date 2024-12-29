@@ -7,8 +7,8 @@ hero:
   text: "笔记仓库"
   tagline: 持续更新中...
   image:
-    light: images/logo-light.jpg
-    dark: images/logo-dark.jpg
+    light: /images/logo-light.jpg
+    dark: /images/logo-dark.jpg
     alt: 
   actions:
     - theme: brand

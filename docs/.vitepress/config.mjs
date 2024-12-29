@@ -97,9 +97,9 @@ export default defineConfig({
       {
         text: "常用算法",
         items: [
-          { text: "查找算法", link: "/locate" },
-          { text: "排序算法", link: "/sort" },
-          { text: "刷题算法", link: "/leecode" },
+          { text: "查找算法", link: "/algo/search" },
+          { text: "排序算法", link: "/algo/sort/" },
+          { text: "刷题算法", link: "/algo/oj" },
         ],
       },
       {
@@ -213,7 +213,8 @@ export default defineConfig({
             { text: "第一讲", link: "/code/review/redis/1" },
             { text: "第二讲", link: "/code/review/redis/2" },
             { text: "第三讲", link: "/code/review/redis/3" },
-            { text: "第四讲", link: "/code/review/redis/4" },]
+            { text: "第四讲", link: "/code/review/redis/4" },
+          ],
         },
       ],
     },
