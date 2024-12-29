@@ -47,6 +47,40 @@ public static void BubbleSort(int[] arr) {
 
 ### 快速排序
 
+```java
+public static void QuickSort(int[] arr, int start, int end) {
+    if (start >= end) return;
+    int base = arr[start];
+    int low = start;
+    int high = end;
+
+    /* 版本1 */
+    while (low < high) {
+        while (low < high && arr[high] > base) high--;
+        while (low < high && arr[low] < base) low++;
+        if (low < high) {
+            int tmp = arr[high];
+            arr[high] = arr[low];
+            arr[low] = tmp;
+        }
+    }
+
+    /* 版本2 */
+    /* while (low < high) {
+        while (low < high && arr[high] > base) high--;
+        arr[low] = arr[high];
+        while (low < high && arr[low] < base) low++;
+        arr[high] = arr[low];
+    }
+    // 交换base与arr[low]的值
+    int tmp = arr[low];
+    arr[low] = base;
+    base = tmp; */
+
+    QuickSort(arr, start, low - 1);
+    QuickSort(arr, low + 1, end);
+}
+```
 
 ## 选择类
 
