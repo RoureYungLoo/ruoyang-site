@@ -71,11 +71,11 @@ public static void QuickSort(int[] arr, int start, int end) {
         arr[low] = arr[high];
         while (low < high && arr[low] < base) low++;
         arr[high] = arr[low];
-    }
+    } */
     // 交换base与arr[low]的值
     int tmp = arr[low];
     arr[low] = base;
-    base = tmp; */
+    base = tmp; 
 
     QuickSort(arr, start, low - 1);
     QuickSort(arr, low + 1, end);
