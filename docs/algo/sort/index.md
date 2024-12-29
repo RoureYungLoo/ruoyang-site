@@ -30,6 +30,21 @@ public static void directInsertSort(int[] arr) {
 
 ### 冒泡排序
 
+```java
+public static void BubbleSort(int[] arr) {
+    for (int i = 0; i < arr.length - 1; i++) { // n个数比较 ( n-1 ) 轮
+        // System.out.println("第" + i + "轮"); // 每比较一轮，就会找出当前轮次的最大值
+        for (int j = 0; j < arr.length - i - 1; j++) { // 每轮比较( n-1 - i )次， i为轮次
+            if (arr[j] > arr[j + 1]) {
+                int tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+            }
+        }
+    }
+}
+```
+
 ### 快速排序
 
 
