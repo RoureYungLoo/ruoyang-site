@@ -15,6 +15,9 @@ hero:
       text: 最近更新
       link: /markdown-examples
     - theme: brand
+      text: 项目解读
+      link: /project/
+    - theme: brand
       text: 源码进阶
       link: /code/review/
 
@@ -32,6 +35,7 @@ features:
   - title: 编码规范
     details: 编码规范
 ---
+
 
 # 中间件 Middleware
 
