@@ -36,13 +36,18 @@ features:
     details: 编码规范
 ---
 
+<br />
 
 # 中间件 Middleware
+
+[[toc]]
+
 
 ## 网关
 
 - Nginx
 - Kong
+- Apisix
 - Zuul
 - Spring Cloud Gateway
 
@@ -58,7 +63,7 @@ features:
 ## 搜索引擎
 
 - Lucene
-- ElasticSearch
+- Elastic Search
 - Solr
 
 ## 熔断降级
@@ -123,7 +128,7 @@ features:
 
 - SLF4J
 - log4f
-- log4f2
+- log4f 2
 - logback
 
 ## 文件系统
@@ -132,7 +137,7 @@ features:
 - NFS
 - FastDFS
 - MogileFS
-- 
+
 ## RPC框架 
 
 - Dubbo、Dubbox
@@ -143,7 +148,7 @@ features:
 - rpcx
 - bRPC
 - Tars
-- 
+
 ## 工具类库
 
 - hutool

@@ -22,17 +22,17 @@ export default defineConfig({
       {
         text: "计算机基础",
         items: [
-          { text: "组成原理", link: "/pc" },
-          { text: "操作系统", link: "/os" },
-          { text: "数据结构", link: "/ds" },
-          { text: "计算机网络", link: "/net" },
+          { text: "组成原理", link: "/base/poc/" },
+          { text: "操作系统", link: "/base/os/" },
+          { text: "数据结构", link: "/base/ds/" },
+          { text: "计算机网络", link: "/base/net/" },
         ],
       },
       {
         text: "编程语言",
         items: [
           {
-            text: ">>>前端<<<",
+            text: " 前  端 ",
             items: [
               { text: "HTML", link: "/langs/html/" },
               { text: "CSS", link: "/langs/css/" },
@@ -41,7 +41,7 @@ export default defineConfig({
             ],
           },
           {
-            text: ">>>后端<<<",
+            text: " 后  端 ",
             items: [
               { text: "C语言", link: "/langs/c/" },
               { text: "C++", link: "/langs/cpp/" },
@@ -58,8 +58,8 @@ export default defineConfig({
       {
         text: "并发 | 网络",
         items: [
-          { text: "并发编程", link: "con" },
-          { text: "网络编程", link: "/netprogram" },
+          { text: "并发编程", link: "/con/" },
+          { text: "网络编程", link: "/net/" },
         ],
       },
       { text: "JVM", link: "/jvm" },
@@ -67,15 +67,16 @@ export default defineConfig({
       {
         text: "数据库",
         items: [
+          { text: "简介", link: "/db/" },
           {
-            text: "SQL",
+            text: ">>>SQL<<<",
             items: [
               { text: "MySQL", link: "/db/sql/mysql/" },
               { text: "SQL Server", link: "/db/sql/sqlserver/" },
             ],
           },
           {
-            text: "NoSQL",
+            text: ">>NoSQL<<",
             items: [
               { text: "Redis", link: "/db/nosql/redis/" },
               { text: "ValKey", link: "/db/nosql/valkey/" },
@@ -97,23 +98,23 @@ export default defineConfig({
       {
         text: "Spring教程",
         items: [
-          { text: "Spring Framework", link: "/item-1" },
-          { text: "Spring Boot", link: "/item-2" },
-          { text: "Spring Cloud", link: "/item-3" },
+          { text: "Spring Framework", link: "/spring/base/" },
+          { text: "Spring Boot", link: "/spring/boot/" },
+          { text: "Spring Cloud", link: "/spring/cloud/" },
         ],
       },
       {
         text: "版本管理",
         items: [
-          { text: "Git", link: "/git" },
-          { text: "SVN", link: "/svn" },
+          { text: "Git", link: "/vercon/git/" },
+          { text: "SVN", link: "/vercon/svn/" },
         ],
       },
       {
         text: "搜索引擎",
         items: [
-          { text: "lucence", link: "/luc" },
-          { text: "ElasticSearch", link: "/es" },
+          { text: "lucene", link: "/seaeng/lucene/" },
+          { text: "ElasticSearch", link: "/seaeng/elastic/" },
         ],
       },
       {
@@ -127,8 +128,9 @@ export default defineConfig({
       {
         text: "面试题",
         items: [
-          { text: "八股文", link: "/interviews/bases/" },
+          { text: "基础题", link: "/interviews/bases/" },
           { text: "场景题", link: "/interviews/scenes/" },
+          { text: "问题排查类", link: "/interviews/debug/" },
         ],
       },
       { text: "关于", link: "/about" },
@@ -241,8 +243,8 @@ export default defineConfig({
       ],
     },
 
-    lightModeSwitchTitle:"开灯",
-    darkModeSwitchTitle:"关灯",
+    lightModeSwitchTitle: "开灯",
+    darkModeSwitchTitle: "关灯",
 
     socialLinks: [
       { icon: "github", link: "https://github.com/RoureYungLoo" },
