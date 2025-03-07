@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 最近更新
-      link: /markdown-examples
+      link: /latest
     - theme: brand
       text: 项目解读
       link: /project/

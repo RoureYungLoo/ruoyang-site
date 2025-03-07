@@ -36,8 +36,8 @@ export default defineConfig({
             items: [
               { text: "HTML", link: "/langs/html/" },
               { text: "CSS", link: "/langs/css/" },
-              { text: "JavasCript", link: "/langs/js/" },
-              { text: "TypesCript", link: "/langs/ts/" },
+              { text: "JS", link: "/langs/js/" },
+              { text: "TS", link: "/langs/ts/" },
             ],
           },
           {
@@ -45,12 +45,12 @@ export default defineConfig({
             items: [
               { text: "C语言", link: "/langs/c/" },
               { text: "C++", link: "/langs/cpp/" },
-              { text: "C#", link: "/langs/csharp/" },
+              // { text: "C#", link: "/langs/csharp/" },
               { text: "Java", link: "/langs/java/" },
               { text: "Python", link: "/langs/py/" },
               { text: "Golang", link: "/langs/go/" },
               { text: "SQL", link: "/langs/sql/" },
-              { text: "Lua", link: "/langs/lua/" },
+              // { text: "Lua", link: "/langs/lua/" },
             ],
           },
         ],
@@ -127,29 +127,46 @@ export default defineConfig({
       },
       {
         text: "面试题",
-        items: [
-          { text: "基础题", link: "/interviews/bases/" },
-          { text: "场景题", link: "/interviews/scenes/" },
-          { text: "问题排查类", link: "/interviews/debug/" },
-        ],
+        link: "/interviews/"
       },
       { text: "关于", link: "/about" },
     ],
 
     sidebar: {
-      "/program-langs/c/": [
+      "/langs/c/": [
         {
-          text: "C语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
+          text: "C语言教程",
+          collapsed: false,
+          items: [
+            { text: "C语言概述", link: "/langs/c/C语言概述" },
+            { text: "结构化的C程序设计", link: "/langs/c/结构化的C程序设计" },
+            { text: "C语言程序流程控制", link: "/langs/c/C语言程序流程控制" },
+            { text: "C语言数组", link: "/langs/c/C语言数组" },
+            { text: "C语言指针", link: "/langs/c/C语言指针" },
+            { text: "C语言字符和字符串", link: "/langs/c/C语言字符和字符串" },
+            { text: "格式化输入和输出", link: "/langs/c/格式化输入和输出" },
+            { text: "结构体_共用体_枚举_位域", link: "/langs/c/结构体_共用体_枚举_位域" },
+          ],
         },
       ],
 
-      "/program-langs/cpp/": [
+      "/langs/cpp/": [
         {
-          text: "C++",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/cpp/" }],
+          text: "C++基础教程",
+          collapsed: false,
+          items: [
+            { text: "C++对象技术简介", link: "/langs/cpp/00-C++对象技术简介" },
+            { text: "C++类与对象简介", link: "/langs/cpp/01-类与对象简介" },
+            { text: "C++类的深入剖析一", link: "/langs/cpp/02-类的深入剖析一" },
+            { text: "C++类的深入剖析二", link: "/langs/cpp/03-类的深入剖析二" },
+            { text: "C++运算符重载", link: "/langs/cpp/04-运算符重载" },
+            { text: "C++继承", link: "/langs/cpp/05-C++继承" },
+            { text: "C++多态", link: "/langs/cpp/06-C++多态" },
+            { text: "C++模板", link: "/langs/cpp/07-C++模板" },
+            { text: "C++IO", link: "/langs/cpp/08-C++IO流" },
+            { text: "C++异常", link: "/langs/cpp/09-C++异常处理" },
+            { text: "C++新特性", link: "/langs/cpp/10-C++新特性" },
+          ],
         },
       ],
       "/program-langs/csharp/": [
@@ -163,7 +180,8 @@ export default defineConfig({
         {
           text: "java",
           collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
+          items: [
+            { text: "1", link: "/program-langs/c/1/" }],
         },
       ],
       "/program-langs/python/": [
@@ -208,11 +226,54 @@ export default defineConfig({
           items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
       ],
-      "/interviews/bases/": [
+      "/interviews/": [
         {
           text: "基础面试题",
           collapsed: false,
-          items: [{ text: "java基础", link: "/interviews/bases/java" }],
+          items: [
+            { text: "Java面试题", link: "/interviews/java" },
+            { text: "Spring 框架面试题", link: "/interviews/java" },
+            { text: "Spring MVC 面试题", link: "/interviews/java" },
+            { text: "Spring Boot 面试题", link: "/interviews/java" },
+            { text: "Spring Cloud 面试题", link: "/interviews/java" },
+            { text: "MySQL 面试题", link: "/interviews/java" },
+            { text: "Redis 面试题", link: "/interviews/java" },
+            { text: "MyBatis 面试题", link: "/interviews/java" },
+            { text: "MyBatis-Plus 面试题", link: "/interviews/java" },
+            { text: "JPA 面试题", link: "/interviews/java" },
+          ],
+        },
+        {
+          text: "场景类",
+          collapsed: false,
+          items: [
+            { text: "Java面试题", link: "/interviews/java" },
+            { text: "Spring 框架面试题", link: "/interviews/java" }
+          ],
+        },
+        {
+          text: "系统设计类",
+          collapsed: false,
+          items: [
+            { text: "Java面试题", link: "/interviews/java" },
+            { text: "Spring 框架面试题", link: "/interviews/java" }
+          ],
+        },
+        {
+          text: "问题排查类",
+          collapsed: false,
+          items: [
+            { text: "Java面试题", link: "/interviews/bases/java" },
+            { text: "Spring 框架面试题", link: "/interviews/bases/java" },
+            { text: "Spring MVC 面试题", link: "/interviews/bases/java" },
+            { text: "Spring Boot 面试题", link: "/interviews/bases/java" },
+            { text: "Spring Cloud 面试题", link: "/interviews/bases/java" },
+            { text: "MySQL 面试题", link: "/interviews/bases/java" },
+            { text: "Redis 面试题", link: "/interviews/bases/java" },
+            { text: "MyBatis 面试题", link: "/interviews/bases/java" },
+            { text: "MyBatis-Plus 面试题", link: "/interviews/bases/java" },
+            { text: "JPA 面试题", link: "/interviews/bases/java" },
+          ],
         },
       ],
       "/interviews/scenes/": [
