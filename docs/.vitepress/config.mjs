@@ -3,8 +3,8 @@ import { defineConfig } from "vitepress";
 let sidebar_cpp = "/program-langs/cpp/";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "禄若阳的笔记",
-  description: "禄若阳的笔记",
+  title: " ",
+  // description: " ",
   head: [
     [
       "link",
@@ -43,7 +43,7 @@ export default defineConfig({
           {
             text: " 后  端 ",
             items: [
-              { text: "C语言", link: "/langs/c/" },
+              { text: "C", link: "/langs/c/" },
               { text: "C++", link: "/langs/cpp/" },
               // { text: "C#", link: "/langs/csharp/" },
               { text: "Java", link: "/langs/java/" },
@@ -98,9 +98,11 @@ export default defineConfig({
       {
         text: "Spring教程",
         items: [
-          { text: "Spring Framework", link: "/spring/base/" },
+          { text: "Spring Framework", link: "/spring/framework/" },
           { text: "Spring Boot", link: "/spring/boot/" },
           { text: "Spring Cloud", link: "/spring/cloud/" },
+          { text: "Spring Cloud Alibaba", link: "/spring/cloud/alibaba" },
+          { text: "Spring Cloud Netflix", link: "/spring/cloud/netflix" },
         ],
       },
       {
@@ -133,10 +135,43 @@ export default defineConfig({
     ],
 
     sidebar: {
+      "/base/ds/": [
+
+      ],
+      "/langs/html/": [
+        {
+          text: "HTML",
+          items: [
+            { text: "01", link: "/langs/html/01" },
+          ]
+        }
+      ],
+      "/langs/css/": [
+        {
+          text: "CSS",
+          items: [
+            { text: "01", link: "/langs/css/01" },
+          ]
+        }
+      ],
+      "/langs/js/": [
+        {
+          text: "JavaSript编程语言",
+          collapsed: true,
+          items: [{ text: "1", link: "/program-langs/c/1/" }],
+        },
+      ],
+      "/langs/ts/": [
+        {
+          text: "TypeScript编程语言",
+          collapsed: true,
+          items: [{ text: "1", link: "/program-langs/c/1/" }],
+        },
+      ],
       "/langs/c/": [
         {
-          text: "C语言教程",
-          collapsed: false,
+          text: "C编程语言",
+          // collapsed: false,
           items: [
             { text: "C语言概述", link: "/langs/c/C语言概述" },
             { text: "结构化的C程序设计", link: "/langs/c/结构化的C程序设计" },
@@ -152,8 +187,8 @@ export default defineConfig({
 
       "/langs/cpp/": [
         {
-          text: "C++基础教程",
-          collapsed: false,
+          text: "C++编程语言",
+          // collapsed: false,
           items: [
             { text: "C++对象技术简介", link: "/langs/cpp/00-C++对象技术简介" },
             { text: "C++类与对象简介", link: "/langs/cpp/01-类与对象简介" },
@@ -169,59 +204,65 @@ export default defineConfig({
           ],
         },
       ],
-      "/program-langs/csharp/": [
+      "/langs/csharp/": [
         {
-          text: "C#",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/program-langs/java/": [
-        {
-          text: "java",
+          text: "C#编程语言",
           collapsed: true,
           items: [
-            { text: "1", link: "/program-langs/c/1/" }],
+            { text: "C#01", link: "/program-langs/c/1/" }
+          ],
         },
       ],
-      "/program-langs/python/": [
+      "/langs/java/": [
         {
-          text: "python",
+          text: "Java编程语言",
+          // collapsed: false,
+          items: [
+            { text: "概述与基础", link: "/langs/java/01" },
+            { text: "选择与循环", link: "/langs/java/02" },
+            { text: "类与对象", link: "/langs/java/03" },
+            { text: "数组", link: "/langs/java/04" },
+            { text: "字符串", link: "/langs/java/05" },
+            { text: "继承与多态", link: "/langs/java/06" },
+            { text: "常用类", link: "/langs/java/07" },
+            { text: "内部类、枚举、注解", link: "/langs/java/08" },
+            { text: "接口、Lambda表达式", link: "/langs/java/09" },
+            { text: "泛型与集合", link: "/langs/java/10" },
+            { text: "异常处理", link: "/langs/java/11" },
+            { text: "输入输出(IO)", link: "/langs/java/12" },
+            { text: "GUI编程", link: "/langs/java/13" },
+            { text: "数据库编程", link: "/langs/java/14" },
+            { text: "反射与代理", link: "/langs/java/15" },
+            { text: "多线程与并发", link: "/langs/java/16" },
+            { text: "网络编程", link: "/langs/java/17" },
+          ],
+        },
+      ],
+      "/langs/py/": [
+        {
+          text: "Python编程语言",
           collapsed: true,
           items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
       ],
-      "/program-langs/go/": [
+      "/langs/go/": [
         {
-          text: "go",
+          text: "Go编程语言",
           collapsed: true,
           items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
       ],
-      "/program-langs/sql/": [
+      "/langs/sql/": [
         {
-          text: "sql",
+          text: "SQL编程语言",
           collapsed: true,
           items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
       ],
-      "/program-langs/js/": [
+
+      "/langs/lua/": [
         {
-          text: "javascript",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/program-langs/ts/": [
-        {
-          text: "typescript",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/program-langs/lua/": [
-        {
-          text: "lua",
+          text: "Lua编程语言",
           collapsed: true,
           items: [{ text: "1", link: "/program-langs/c/1/" }],
         },

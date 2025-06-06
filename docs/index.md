@@ -1,349 +1,89 @@
----
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
+# 技术组件
 
-hero:
-  name: "禄若阳"
-  text: "笔记仓库"
-  tagline: 持续更新中...
-  image:
-    light: /logo-light.jpg
-    dark: /logo-dark.jpg
-    alt: 
-  actions:
-    - theme: brand
-      text: 最近更新
-      link: /latest
-    - theme: brand
-      text: 项目解读
-      link: /project/
-    - theme: brand
-      text: 源码进阶
-      link: /code/review/
+**网关：** Nginx | Kong | Apisix | Zuul | Spring Cloud Gateway
 
-features:
-  - title: 基础三剑客
-    details: HTML CSS JavaScript
-  - title: 进阶三框架
-    details: React Vue Angular
-  - title: 开发框架
-    details: UniApp Electron Qt
-  - title: Spring 全家桶
-    details: Spring、Spring Boot、Spring Cloud
-  - title: 中间件 全家桶
-    details: MQ、DataBase、分布式组件...
-  - title: 编码规范
-    details: 编码规范
----
+**缓存：** Redis | MemCached | OsCache | EhCache | Caffeine | Redisson
 
-<br />
+**搜索引擎：** Lucene | Elastic Search | Solr
 
-# 中间件 Middleware
+**熔断降级：** Hystrix | resilience4j | Sentinel
 
-[[toc]]
+**链路追踪：**  Zipkin | SkyWalking | Jaeger | Cat
 
+**负载均衡：** DNS | F5 | LVS | Nginx | OpenResty | HAproxy | Ribbon
 
-## 网关
+**注册中心：** Eureka | Zookeeper | Redis | Etcd | Consul | Nacos
 
-- Nginx
-- Kong
-- Apisix
-- Zuul
-- Spring Cloud Gateway
+**认证鉴权：** JWT | SpringSecurity | JJWT（Java JWT） | Spring Security OAuth2.0 | Sa-Token | JustAuth | Apache Shiro
 
-## 缓存
+**消息队列：** RabbitMQ | Kafka | RocketMQ | ActiveMQ | Redis | ZeroMQ | MetaMQ
 
-- Redis
-- MemCached
-- OsCache
-- EhCache
-- Caffeine
-- Redisson
+**监控：** Grafana | Prometheus | Influxdb | Telegraf | Lepus
 
-## 搜索引擎
+**服务监控：**  SpringBootAdmin
 
-- Lucene
-- Elastic Search
-- Solr
+**日志：** SLF4J | log4j | log4j 2 | logback
 
-## 熔断降级
-- Hystrix
-- resilience4j
-- Sentinel
+**RPC框架：** Dubbo、Dubbox | Motan | Thrift | gRPC | Hessian | rpcx | bRPC | Tars
 
-## 链路追踪
-- Zipkin
-- SkyWalking
-- Jaeger
-- 大众点评 Cat
+**工具类库：** commons-io | hutool | guvava
 
-## 负载均衡
-- DNS
-- F5
-- LVS
-- Nginx
-- OpenResty
-- HAproxy
-- Ribbon
-
-## 注册中心
-- Eureka
-- Zookeeper
-- Redis
-- Etcd
-- Consul
-- Nacos
-
-## 认证鉴权
-- JWT
-- SpringSecurity
-- JJWT（Java JWT）
-- Spring Security OAuth2.0
-- Sa-Token
-- JustAuth
-- Apache Shiro
-
-## 消费队列
-
-- RabbitMQ
-- Kafka
-- RocketMQ
-- ActiveMQ
-- Redis
-- ZeroMQ
-- MetaMQ
-
-## 系统监控
-- Grafana
-- Prometheus
-- Influxdb
-- Telegraf
-- Lepus
-
-## 服务监控
-
-- SpringBootAdmin
-
-## 日志
-
-- SLF4J
-- log4f
-- log4f 2
-- logback
-
-## 文件系统
-
-- OSS
-- NFS
-- FastDFS
-- MogileFS
-
-## RPC框架 
-
-- Dubbo、Dubbox
-- Motan
-- Thrift
-- gRPC
-- Hessian
-- rpcx
-- bRPC
-- Tars
-
-## 工具类库
-
-- hutool
-- guvava
-
-## 构建工具
-
-- Maven
-- Gradle
-- Ant
+**构建工具：** Maven | Gradle | Ant
   
-## 集成部署
+**集成部署：** Docker | Jenkins | Git | Maven | Github Actions
 
-- Docker
-- Jenkins
-- Git
-- Maven
-- Github Actions
+**版本控制：** Git | SVN | Gitlab | Flyway
 
-## 版本控制
+**分布式配置：** Disconf | Apollo | Spring Cloud Config | Diamond | Nacos 
 
-- Git
-- SVN
-- Gitlab
-- Flyway
+**测试：** LoadRunner | JMeter、 | AB | webbench
 
-## 分布式配置
-
-- Disconf
-- Apollo
-- Spring Cloud Config
-- Diamond
-- Nacos 
-
-## 压测
-
-- LoadRunner
-- JMeter、
-- AB
-- webbench
-
-## 数据库
-
-- MySQL
-- Redis
-- MongoDB
-- PostgreSQL
-- Memcache
-- HBase
-- MariaDB
-- TiDB
-- Sqlserver2017
-- Oracle11g
+**数据库：** MySQL | Redis | MongoDB | PostgreSQL | Memcache | HBase | MariaDB | TiDB | Sqlserver2017 | Oracle11g
   
-## 分库分表
+**分库分表：** ShardingSphere-JDBC
 
-- ShardingSphere-JDBC
+**DB连接池：** Alibaba druid | HikariCP | c3p0 | DBCP
 
-## 数据库连接池
+**网络相关：** VPC | 弹性公网IP | CDN
 
-- Alibaba druid
-- HikariCP
-- c3p0
-- DBCP
+**DB Binlog 分析：** DRDS | Mycat | 360 Atlas | Cobar | Canal 
 
-## 网络专用网络
+**分布式框架：** Dubbo | Motan | Spring Could
 
-- VPC
-- 弹性公网IP
-- CDN
+**分布式任务：** XXL-JOB | Elastic-Job | Saturn | Quartz | Hangfire
 
-## 数据库中间件
+**分布式链路追踪：** | Pinpoint | CAT | Zipkin
 
-- DRDS
-- Mycat
-- 360 Atlas
-- Cobar
+**分布式事务：** Seata | TX-LCN
 
-## 分布式框架
+**分布式存储：** MinIO | Ceph | AWS S3 | OSS | NFS | FastDFS |MogileFS
 
-- Dubbo
-- Motan
-- Spring-Could
+**分布式ID：** Snowflake
 
-## 分布式任务
+**版本发布：** 蓝绿部署 | A/B测试 | 灰度发布/金丝雀发布
 
-- XXL-JOB
-- Elastic-Job
-- Saturn
-- Quartz
-- Hangfire
+**ORM：** MyBatis | Mybatis Plus | Spring data JPA
 
-## 分布式追踪
+**简化开发：** Lombook
 
-- Pinpoint
-- CAT
-- zipkin
+**接口文档：** Swagger | Knife4j | OpenAPI
 
-## 分布式日志
+**web服务器：** Jetty | Undertow | Tomcat
 
-- elasticsearch
-- logstash
-- Kibana
-- redis
-- kafka
+**代码质量控：** Sonarqube | Arthas
 
-## 分布式事务
+**容器化：** Docker | Kubernetes | Contanierd | Podman
 
-- Seata
-- TX-LCN
+**NIO：** Netty
 
-## 分布式存储
+**ELK：** Elastic Search | Logstash | Kibana | Beats
 
-- MinIO
-- Ceph
-- AWS S3
-- 阿里云OSS
+**模板引擎：**  Thymeleaf | Beetl | FreeMarker
 
-## 分布式ID
+**报表工具：** JimuReport
 
-- snowflake
+ **Http Client：** OpenFeign | Feign
 
-## 版本发布
+**热部署：** dev-tools | JRebel
 
-- 蓝绿部署
-- A/B测试
-- 灰度发布/金丝雀发布
-
-## ORM 
-
-- MyBatis
-- Mybatis Plus
-- Spring data JPA
-
-## 简化开发
-
-- Lombook
-
-## 接口文档
-
-- Swagger
-- knife4j
-- OpenAPI
-
-## web服务器
-
-- jetty
-- undertow
-- tomcat
-
-## 代码质量控制
-
-- Sonarqube
-- arthas
-
-## 容器引擎
-
-- docker
-- k8s
-- contanierd
-- podman
-
-## NIO
-
-- netty
-
-## ELK
-
-- elastic search
-- logstash
-- kibana
-- Beats
-
-## 模板引擎
-
-- thymeleaf
-- beetl
-
-## 报表工具
-
-- JimuReport
-
-## Http Client
-
-- OpenFeign
-- Feign
-
-## Mysql binlog
-
-- canal 
-
-## 热部署
-
-- JRebel
-
-## 配置文件加密
-
-- Jasypt
+**配置加密：** Jasypt
