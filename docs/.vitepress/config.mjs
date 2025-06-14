@@ -25,7 +25,7 @@ export default defineConfig({
           { text: "组成原理", link: "/base/poc/" },
           { text: "操作系统", link: "/base/os/" },
           { text: "数据结构", link: "/base/ds/" },
-          { text: "计算机网络", link: "/base/net/" },
+          { text: "计算机网络", link: "/base/net/net.md" },
         ],
       },
       {
@@ -269,51 +269,49 @@ export default defineConfig({
       ],
       "/interviews/": [
         {
-          text: "基础面试题",
-          collapsed: false,
+          text:"计算机网络",
+          link:"/interviews/network/"
+        },
+        {
+          text: "Java 面试题",
+          //collapsed: false,
           items: [
-            { text: "Java面试题", link: "/interviews/java" },
-            { text: "Spring 框架面试题", link: "/interviews/java" },
-            { text: "Spring MVC 面试题", link: "/interviews/java" },
-            { text: "Spring Boot 面试题", link: "/interviews/java" },
-            { text: "Spring Cloud 面试题", link: "/interviews/java" },
-            { text: "MySQL 面试题", link: "/interviews/java" },
-            { text: "Redis 面试题", link: "/interviews/java" },
-            { text: "MyBatis 面试题", link: "/interviews/java" },
-            { text: "MyBatis-Plus 面试题", link: "/interviews/java" },
-            { text: "JPA 面试题", link: "/interviews/java" },
+            { text: "基础", link: "/interviews/java/java基础.md" },
+            { text: "继承与多态", link: "/interviews/java/继承与多态.md" },
+            { text: "集合", link: "/interviews/java/集合.md" },
+            { text: "多线程", link: "/interviews/java/多线程.md" },
+            { text: "并发", link: "/interviews/java/并发.md" },
+            { text: "反射与注解", link: "/interviews/java/反射与注解.md" },
+            { text: "代理", link: "/interviews/java/代理.md" },
+            { text: "IO", link: "/interviews/java/IO.md" },
+            { text: "JVM", link: "/interviews/java/jvm.md" }
           ],
         },
         {
           text: "场景类",
           collapsed: false,
           items: [
-            { text: "Java面试题", link: "/interviews/java" },
-            { text: "Spring 框架面试题", link: "/interviews/java" }
+            { text: "场景1", link: "/interviews/java" },
+            { text: "场景2", link: "/interviews/java" }
           ],
         },
         {
           text: "系统设计类",
           collapsed: false,
           items: [
-            { text: "Java面试题", link: "/interviews/java" },
-            { text: "Spring 框架面试题", link: "/interviews/java" }
+            { text: "设计1", link: "/interviews/java" },
+            { text: "设计2", link: "/interviews/java" }
           ],
         },
         {
           text: "问题排查类",
           collapsed: false,
           items: [
-            { text: "Java面试题", link: "/interviews/bases/java" },
-            { text: "Spring 框架面试题", link: "/interviews/bases/java" },
-            { text: "Spring MVC 面试题", link: "/interviews/bases/java" },
-            { text: "Spring Boot 面试题", link: "/interviews/bases/java" },
-            { text: "Spring Cloud 面试题", link: "/interviews/bases/java" },
-            { text: "MySQL 面试题", link: "/interviews/bases/java" },
-            { text: "Redis 面试题", link: "/interviews/bases/java" },
-            { text: "MyBatis 面试题", link: "/interviews/bases/java" },
-            { text: "MyBatis-Plus 面试题", link: "/interviews/bases/java" },
-            { text: "JPA 面试题", link: "/interviews/bases/java" },
+            { text: "排查1", link: "/interviews/bases/java" },
+            { text: "排查2", link: "/interviews/bases/java" },
+            { text: "排查3", link: "/interviews/bases/java" },
+            { text: "排查4", link: "/interviews/bases/java" },
+
           ],
         },
       ],
@@ -369,11 +367,11 @@ export default defineConfig({
       copyright: `版权所有 © 2024-${new Date().getFullYear()} 禄若阳`,
     },
     docFooter: {
-      prev: "上一页",
-      next: "下一页",
+      prev: "温故而知新",
+      next: "学而时习之",
     },
     outline: {
-      label: "页面导航",
+      label: "本页内容",
     },
     editLink: {
       pattern: "https://github.com/roueyunloo/",
