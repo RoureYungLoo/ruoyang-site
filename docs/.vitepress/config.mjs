@@ -269,48 +269,67 @@ export default defineConfig({
       ],
       "/interviews/": [
         {
-          text:"计算机网络",
-          link:"/interviews/network/"
+          text: "计算机网络",
+          link: "/interviews/network/"
         },
         {
-          text: "Java 面试题",
-          //collapsed: false,
+          text: "Java",
+          collapsed: false,
           items: [
-            { text: "基础", link: "/interviews/java/java基础.md" },
-            { text: "继承与多态", link: "/interviews/java/继承与多态.md" },
-            { text: "集合", link: "/interviews/java/集合.md" },
-            { text: "多线程", link: "/interviews/java/多线程.md" },
-            { text: "并发", link: "/interviews/java/并发.md" },
-            { text: "反射与注解", link: "/interviews/java/反射与注解.md" },
-            { text: "代理", link: "/interviews/java/代理.md" },
-            { text: "IO", link: "/interviews/java/IO.md" },
+            { text: "基础", link: "/interviews/java/base.md" },
+            { text: "继承", link: "/interviews/java/extends.md" },
+            { text: "多态", link: "/interviews/java/polymorphism.md" },
+            { text: "集合", link: "/interviews/java/collection.md" },
+            { text: "反射", link: "/interviews/java/reflection.md" },
+            { text: "代理", link: "/interviews/java/proxy.md" },
+            { text: "注解", link: "/interviews/java/annotation.md" },
+            { text: "I/O", link: "/interviews/java/io.md" },
+            { text: "多线程", link: "/interviews/java/multi-thread.md" },
+            { text: "并发", link: "/interviews/java/concurrency.md" },
             { text: "JVM", link: "/interviews/java/jvm.md" }
           ],
         },
         {
-          text: "场景类",
+          text: "MySQL",
           collapsed: false,
           items: [
-            { text: "场景1", link: "/interviews/java" },
-            { text: "场景2", link: "/interviews/java" }
+            { text: "MySQL01", link: "/interviews/mysql/01.md" },
           ],
         },
         {
-          text: "系统设计类",
+          text: "Redis",
           collapsed: false,
           items: [
-            { text: "设计1", link: "/interviews/java" },
-            { text: "设计2", link: "/interviews/java" }
+            { text: "Redis01", link: "/interviews/redis/01.md" },
           ],
         },
         {
-          text: "问题排查类",
+          text: "Spring",
           collapsed: false,
           items: [
-            { text: "排查1", link: "/interviews/bases/java" },
-            { text: "排查2", link: "/interviews/bases/java" },
-            { text: "排查3", link: "/interviews/bases/java" },
-            { text: "排查4", link: "/interviews/bases/java" },
+            { text: "Spring01", link: "/interviews/spring/01.md" },
+          ],
+        },
+        {
+          text: "Spring MVC",
+          collapsed: false,
+          items: [
+            { text: "Spring MVC 01", link: "/interviews/springmvc/01.md" },
+          ],
+        },
+        {
+          text: "Spring Boot",
+          collapsed: false,
+          items: [
+            { text: "Spring Boot", link: "/interviews/springboot/01.md" },
+
+          ],
+        },
+        {
+          text: "Spring Cloud",
+          collapsed: false,
+          items: [
+            { text: "Spring Cloud 01", link: "/interviews/springcloud/01.md" },
 
           ],
         },
@@ -371,11 +390,23 @@ export default defineConfig({
       next: "学而时习之",
     },
     outline: {
+      level: [1, 6],
       label: "本页内容",
     },
     editLink: {
-      pattern: "https://github.com/roueyunloo/",
+      pattern: "https://github.com/RoureYungLoo/ruoyang-site/tree/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
+    lastUpdated: {
+      text: '最近更新',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    }
   },
+  lastUpdated: true,
+  markdown: {
+    lineNumbers: true
+  }
 });
