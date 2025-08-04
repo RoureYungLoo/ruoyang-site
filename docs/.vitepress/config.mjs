@@ -273,7 +273,7 @@ export default defineConfig({
           link: "/interviews/network/"
         },
         {
-          text: "Java",
+          text: "Java 面试题",
           collapsed: false,
           items: [
             { text: "基础", link: "/interviews/java/base.md" },
@@ -290,35 +290,35 @@ export default defineConfig({
           ],
         },
         {
-          text: "MySQL",
+          text: "MySQL 面试题",
           collapsed: false,
           items: [
-            { text: "MySQL01", link: "/interviews/mysql/01.md" },
+            { text: "MySQL01", link: "/interviews/mysql/mysql.md" },
           ],
         },
         {
-          text: "Redis",
+          text: "Redis 面试题",
           collapsed: false,
           items: [
-            { text: "Redis01", link: "/interviews/redis/01.md" },
+            { text: "Redis01", link: "/interviews/redis/redis.md" },
           ],
         },
         {
-          text: "Spring",
+          text: "Spring Framework 面试题",
           collapsed: false,
           items: [
             { text: "Spring01", link: "/interviews/spring/01.md" },
           ],
         },
         {
-          text: "Spring MVC",
+          text: "Spring MVC 面试题",
           collapsed: false,
           items: [
             { text: "Spring MVC 01", link: "/interviews/springmvc/01.md" },
           ],
         },
         {
-          text: "Spring Boot",
+          text: "Spring Boot 面试题",
           collapsed: false,
           items: [
             { text: "Spring Boot", link: "/interviews/springboot/01.md" },
@@ -326,7 +326,7 @@ export default defineConfig({
           ],
         },
         {
-          text: "Spring Cloud",
+          text: "Spring Cloud 面试题",
           collapsed: false,
           items: [
             { text: "Spring Cloud 01", link: "/interviews/springcloud/01.md" },
