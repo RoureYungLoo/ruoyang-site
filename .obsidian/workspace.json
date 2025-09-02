@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "4d193c9c54fef943",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa872ae0fc7eec7b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51a6e060e9a8ae96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/project/index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "420591cf023ab390",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fa9e894e9e807a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c56f0f90dc80a0f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "484c556585eb4171",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "eb69f311f7525a35",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "909e2c9befd5da2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef5f85cb7c2837e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e72c8468ff130138",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/interviews/mysql/mysql.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "mysql 的反向链接列表"
+            }
+          },
+          {
+            "id": "cf325c87bb39e10e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/interviews/mysql/mysql.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "mysql 的出链列表"
+            }
+          },
+          {
+            "id": "5b9233ac98bffa20",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "d5fa43801a4d19fc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/project/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "index 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 389.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "51a6e060e9a8ae96",
+  "lastOpenFiles": [
+    "docs/langs/c/C.md",
+    "docs/langs/c/C语言概述.md",
+    "docs/langs/c/项目管理工具.md",
+    "docs/langs/c/结构化的C程序设计.md",
+    "docs/langs/c/02-走近C程序设计.md",
+    "docs/langs/c/01-走近C语言.md",
+    "docs/mq/apollo/index.md",
+    "docs/mq/activemq/index.md",
+    "docs/langs/c/img/04a8089c-ec37-4aeb-bfa7-cb2b363e5e78.png",
+    "docs/langs/c/img/003fa2b4-29f2-4605-8f44-f1abff88c634.png",
+    "docs/langs/c/img/2c6c4e20-844f-4c94-a5c6-9f6059800790.png",
+    "docs/interviews/index.md",
+    "docs/interviews/scenes/index.md",
+    "docs/interviews/redis/redis.md",
+    "docs/interviews/network/index.md",
+    "docs/interviews/java/annotation.md",
+    "docs/interviews/java/base.md",
+    "docs/interviews/java/collection.md",
+    "docs/interviews/java/concurrency.md",
+    "docs/interviews/java/extends.md",
+    "docs/interviews/java/io.md",
+    "docs/interviews/java/jvm.md",
+    "docs/interviews/java/multi-thread.md",
+    "docs/interviews/java/polymorphism.md",
+    "docs/interviews/java/reflection.md",
+    "docs/interviews/java/proxy.md",
+    "docs/langs/c/C语言函数.md",
+    "node_modules/vite/LICENSE.md",
+    "docs/interviews/mysql/mysql.md"
+  ]
+}

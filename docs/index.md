@@ -20,7 +20,7 @@
 
 **监控：** Grafana | Prometheus | Influxdb | Telegraf | Lepus
 
-**服务监控：**  SpringBootAdmin
+**服务监控：**  Spring Boot Admin
 
 **日志：** SLF4J | log4j | log4j 2 | logback
 
@@ -30,39 +30,39 @@
 
 **构建工具：** Maven | Gradle | Ant
   
-**集成部署：** Docker | Jenkins | Git | Maven | Github Actions
+**集成部署：** Docker | Jenkins | GitLab | Maven | Github Actions
 
 **版本控制：** Git | SVN | Gitlab | Flyway
 
-**分布式配置：** Disconf | Apollo | Spring Cloud Config | Diamond | Nacos 
+**分布式配置：** Disconf | Apollo | Spring Cloud Config | Diamond | Nacos
 
-**测试：** LoadRunner | JMeter、 | AB | webbench
+**测试：** LoadRunner | JMeter | AB | WebBench
 
 **数据库：** MySQL | Redis | MongoDB | PostgreSQL | Memcache | HBase | MariaDB | TiDB | Sqlserver2017 | Oracle11g
   
 **分库分表：** ShardingSphere-JDBC
 
-**DB连接池：** Alibaba druid | HikariCP | c3p0 | DBCP
+**DB连接池：** Alibaba Druid | HikariCP | c3p0 | DBCP
 
 **网络相关：** VPC | 弹性公网IP | CDN
 
-**DB Binlog 分析：** DRDS | Mycat | 360 Atlas | Cobar | Canal 
+**DB Binlog 分析：** DRDS | Mycat | 360 Atlas | Cobar | Canal
 
 **分布式框架：** Dubbo | Motan | Spring Could
 
 **分布式任务：** XXL-JOB | Elastic-Job | Saturn | Quartz | Hangfire
 
-**分布式链路追踪：** | Pinpoint | CAT | Zipkin
+**分布式链路追踪：** Pinpoint | CAT | Zipkin
 
 **分布式事务：** Seata | TX-LCN
 
-**分布式存储：** MinIO | Ceph | AWS S3 | OSS | NFS | FastDFS |MogileFS
+**分布式存储：** MinIO | Ceph | AWS S3 | OSS | NFS | FastDFS | MogileFS
 
 **分布式ID：** Snowflake
 
 **版本发布：** 蓝绿部署 | A/B测试 | 灰度发布/金丝雀发布
 
-**ORM：** MyBatis | Mybatis Plus | Spring data JPA
+**ORM：** MyBatis | Mybatis Plus | SpringData JPA
 
 **简化开发：** Lombook
 
@@ -82,8 +82,12 @@
 
 **报表工具：** JimuReport
 
- **Http Client：** OpenFeign | Feign
+**Http Client：** OpenFeign | Feign
 
 **热部署：** dev-tools | JRebel
 
 **配置加密：** Jasypt
+
+**工作流：** Activity | Flowable
+
+**规则引擎：** Drools | EasyRule | RuleBook | LiteFlow | Jess
