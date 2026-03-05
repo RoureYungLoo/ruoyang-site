@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "aa872ae0fc7eec7b",
+        "id": "5d1c2e0bc6f2f51a",
         "type": "tabs",
         "children": [
           {
-            "id": "51a6e060e9a8ae96",
+            "id": "97c55d75648537c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/project/index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
+              "title": "新标签页"
             }
           }
         ]
@@ -152,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/project/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -178,36 +163,37 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "51a6e060e9a8ae96",
+  "active": "97c55d75648537c5",
   "lastOpenFiles": [
-    "docs/langs/c/C.md",
-    "docs/langs/c/C语言概述.md",
-    "docs/langs/c/项目管理工具.md",
+    "docs/index.md",
+    "docs/api-examples.md",
+    "docs/latest.md",
+    "2025-11-28.md",
+    "未命名.canvas",
+    "docs/db/nosql/valkey/index.md",
+    "docs/db/nosql/redis/index.md",
+    "docs/db/sql/mysql/index.md",
+    "docs/langs/cpp/08-C++IO流.md",
+    "docs/langs/cpp/09-C++异常处理.md",
+    "docs/langs/c/C语言数组.md",
+    "docs/langs/cpp/02-类的深入剖析一.md",
+    "docs/langs/cpp/04-运算符重载.md",
+    "docs/langs/cpp/07-C++模板.md",
+    "docs/langs/cpp/10-C++新特性.md",
+    "docs/langs/cpp/06-C++多态.md",
+    "docs/langs/cpp/05-C++继承.md",
+    "docs/langs/cpp/03-类的深入剖析二.md",
+    "docs/langs/cpp/01-类与对象简介.md",
+    "docs/langs/cpp/00-C++对象技术简介.md",
     "docs/langs/c/结构化的C程序设计.md",
+    "docs/langs/c/格式化输入和输出.md",
     "docs/langs/c/02-走近C程序设计.md",
-    "docs/langs/c/01-走近C语言.md",
-    "docs/mq/apollo/index.md",
-    "docs/mq/activemq/index.md",
+    "docs/langs/c/C语言字符和字符串.md",
+    "docs/langs/c/C语言指针.md",
+    "docs/langs/c/C语言函数.md",
+    "docs/langs/c/C语言概述.md",
     "docs/langs/c/img/04a8089c-ec37-4aeb-bfa7-cb2b363e5e78.png",
     "docs/langs/c/img/003fa2b4-29f2-4605-8f44-f1abff88c634.png",
-    "docs/langs/c/img/2c6c4e20-844f-4c94-a5c6-9f6059800790.png",
-    "docs/interviews/index.md",
-    "docs/interviews/scenes/index.md",
-    "docs/interviews/redis/redis.md",
-    "docs/interviews/network/index.md",
-    "docs/interviews/java/annotation.md",
-    "docs/interviews/java/base.md",
-    "docs/interviews/java/collection.md",
-    "docs/interviews/java/concurrency.md",
-    "docs/interviews/java/extends.md",
-    "docs/interviews/java/io.md",
-    "docs/interviews/java/jvm.md",
-    "docs/interviews/java/multi-thread.md",
-    "docs/interviews/java/polymorphism.md",
-    "docs/interviews/java/reflection.md",
-    "docs/interviews/java/proxy.md",
-    "docs/langs/c/C语言函数.md",
-    "node_modules/vite/LICENSE.md",
-    "docs/interviews/mysql/mysql.md"
+    "docs/langs/c/img/2c6c4e20-844f-4c94-a5c6-9f6059800790.png"
   ]
 }

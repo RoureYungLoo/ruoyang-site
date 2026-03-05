@@ -22,10 +22,11 @@ export default defineConfig({
       {
         text: "计算机基础",
         items: [
-          { text: "组成原理", link: "/base/poc/" },
-          { text: "操作系统", link: "/base/os/" },
-          { text: "数据结构", link: "/base/ds/" },
-          { text: "计算机网络", link: "/base/net/net.md" },
+          { text: "计算机网络", link: "/cs_base/net/" },
+          { text: "计算机组成原理", link: "/cs_base/poc/" },
+          { text: "操作系统", link: "/cs_base/os/" },
+          { text: "数据结构", link: "/cs_base/ds/" },
+          { text: "算法分析设计", link: "/cs_base/alg/" },
         ],
       },
       {
@@ -135,8 +136,15 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/base/ds/": [
-
+      "/cs_base/alg/": [
+        {
+          text:"算法分析设计",
+          collapsed: false,
+          items:[
+            { text: "算法分析1", link: "/cs_base/alg/01" },
+            { text: "算法设计2", link: "/cs_base/alg/02" },
+          ]
+        }
       ],
       "/langs/html/": [
         {
