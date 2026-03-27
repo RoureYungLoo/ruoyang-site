@@ -136,6 +136,13 @@ export default defineConfig({
     ],
 
     sidebar: {
+      "/":[
+        {
+          text:"首页",
+          link:"/"
+        }
+      ],
+
       "/cs_base/alg/": [
         {
           text:"算法分析设计",
@@ -146,6 +153,15 @@ export default defineConfig({
           ]
         }
       ],
+      "/cs_base/ds/": [
+        {
+          text: "数据结构", 
+          collapsed: false,
+          items: [
+            { text: "散列表", link: "/cs_base/ds/hash_table" },
+            { text: "查找", link: "/cs_base/ds/search" },
+            { text: "排序", link: "/cs_base/ds/sort" },
+          ]}],
       "/langs/html/": [
         {
           text: "HTML",
@@ -282,7 +298,7 @@ export default defineConfig({
         },
         {
           text: "Java 面试题",
-          collapsed: false,
+          // collapsed: true,
           items: [
             { text: "基础", link: "/interviews/java/base.md" },
             { text: "继承", link: "/interviews/java/extends.md" },
@@ -394,8 +410,8 @@ export default defineConfig({
       copyright: `版权所有 © 2024-${new Date().getFullYear()} 禄若阳`,
     },
     docFooter: {
-      prev: "温故而知新",
-      next: "学而时习之",
+      prev: "上一页: 温故而知新",
+      next: "下一页: 学而时习之",
     },
     outline: {
       level: [1, 6],

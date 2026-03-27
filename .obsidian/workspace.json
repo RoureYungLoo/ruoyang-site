@@ -11,10 +11,14 @@
             "id": "97c55d75648537c5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/cs_base/ds/sort.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "sort"
             }
           }
         ]
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/cs_base/ds/sort.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "sort 的大纲"
             }
           }
         ],
@@ -165,6 +170,13 @@
   },
   "active": "97c55d75648537c5",
   "lastOpenFiles": [
+    "docs/cs_base/ds/search.md",
+    "docs/cs_base/ds/sort.md",
+    "docs/cs_base/ds/hash_table.md",
+    "docs/cs_base/ds/index.md",
+    "docs/cs_base/ds/data_structures.md",
+    "docs/cs_base/alg/index.md",
+    "docs/cs_base/alg/algorithm_analysis_and_design.md",
     "docs/index.md",
     "docs/api-examples.md",
     "docs/latest.md",
@@ -185,13 +197,6 @@
     "docs/langs/cpp/03-类的深入剖析二.md",
     "docs/langs/cpp/01-类与对象简介.md",
     "docs/langs/cpp/00-C++对象技术简介.md",
-    "docs/langs/c/结构化的C程序设计.md",
-    "docs/langs/c/格式化输入和输出.md",
-    "docs/langs/c/02-走近C程序设计.md",
-    "docs/langs/c/C语言字符和字符串.md",
-    "docs/langs/c/C语言指针.md",
-    "docs/langs/c/C语言函数.md",
-    "docs/langs/c/C语言概述.md",
     "docs/langs/c/img/04a8089c-ec37-4aeb-bfa7-cb2b363e5e78.png",
     "docs/langs/c/img/003fa2b4-29f2-4605-8f44-f1abff88c634.png",
     "docs/langs/c/img/2c6c4e20-844f-4c94-a5c6-9f6059800790.png"
