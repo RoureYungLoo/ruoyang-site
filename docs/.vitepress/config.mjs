@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 let sidebar_cpp = "/program-langs/cpp/";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: " ",
+  title: "禄若阳的 Tech Notes",
   // description: " ",
   head: [
     [
@@ -14,13 +14,16 @@ export default defineConfig({
       },
     ],
   ],
-  lang: "CN",
+  lang: "zh-CN",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "计算机基础",
+        text: "基础原理",
         items: [
           { text: "计算机网络", link: "/cs_base/net/" },
           { text: "计算机组成原理", link: "/cs_base/poc/" },
@@ -57,16 +60,16 @@ export default defineConfig({
         ],
       },
       {
-        text: "并发 | 网络",
+        text: "并发|网络",
         items: [
           { text: "并发编程", link: "/con/" },
           { text: "网络编程", link: "/net/" },
         ],
       },
-      { text: "JVM", link: "/jvm" },
+      { text: "虚拟机", link: "/jvm" },
 
       {
-        text: "数据库",
+        text: "数据存储",
         items: [
           { text: "简介", link: "/db/" },
           {
@@ -86,7 +89,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "消息队列",
+        text: "应用通信",
         items: [
           { text: "RabbitMQ", link: "/mq/rabbitmq/" },
           { text: "Apollo", link: "/mq/apollo/" },
@@ -97,7 +100,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "Spring教程",
+        text: "Spring系列",
         items: [
           { text: "Spring Framework", link: "/spring/framework/" },
           { text: "Spring Boot", link: "/spring/boot/" },
@@ -107,21 +110,21 @@ export default defineConfig({
         ],
       },
       {
-        text: "版本管理",
+        text: "DevOps",
         items: [
           { text: "Git", link: "/vercon/git/" },
           { text: "SVN", link: "/vercon/svn/" },
         ],
       },
       {
-        text: "搜索引擎",
+        text: "高级技术",
         items: [
           { text: "lucene", link: "/seaeng/lucene/" },
           { text: "ElasticSearch", link: "/seaeng/elastic/" },
         ],
       },
       {
-        text: "常用算法",
+        text: "必备算法",
         items: [
           { text: "查找算法", link: "/algo/search" },
           { text: "排序算法", link: "/algo/sort/" },
@@ -136,18 +139,18 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/":[
+      "/": [
         {
-          text:"首页",
-          link:"/"
+          text: "首页",
+          link: "/"
         }
       ],
 
       "/cs_base/alg/": [
         {
-          text:"算法分析设计",
+          text: "算法分析设计",
           collapsed: false,
-          items:[
+          items: [
             { text: "算法分析1", link: "/cs_base/alg/01" },
             { text: "算法设计2", link: "/cs_base/alg/02" },
           ]
@@ -155,13 +158,14 @@ export default defineConfig({
       ],
       "/cs_base/ds/": [
         {
-          text: "数据结构", 
+          text: "数据结构",
           collapsed: false,
           items: [
             { text: "散列表", link: "/cs_base/ds/hash_table" },
             { text: "查找", link: "/cs_base/ds/search" },
             { text: "排序", link: "/cs_base/ds/sort" },
-          ]}],
+          ]
+        }],
       "/langs/html/": [
         {
           text: "HTML",
@@ -289,6 +293,18 @@ export default defineConfig({
           text: "Lua编程语言",
           collapsed: true,
           items: [{ text: "1", link: "/program-langs/c/1/" }],
+        },
+      ],
+      "/db/sql/mysql/": [
+        {
+          text: "MySQL数据库",
+          // collapsed: false,
+          items: [
+            {
+              text: "MySQL学习笔记",
+              link: "/db/sql/mysql/MySQL学习笔记"
+            }
+          ],
         },
       ],
       "/interviews/": [

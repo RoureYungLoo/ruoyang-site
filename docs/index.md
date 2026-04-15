@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # 技术组件
 
 **网关：** Nginx | Kong | Apisix | Zuul | Spring Cloud Gateway
