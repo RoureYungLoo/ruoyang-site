@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: home
 ---
 
 # 技术组件

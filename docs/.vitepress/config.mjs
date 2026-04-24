@@ -143,6 +143,10 @@ export default defineConfig({
         {
           text: "首页",
           link: "/"
+        },
+        {
+          text: "简介",
+          link: "/intro"
         }
       ],
 
@@ -447,6 +451,6 @@ export default defineConfig({
   },
   lastUpdated: true,
   markdown: {
-    lineNumbers: true
+    lineNumbers: false
   }
 });
