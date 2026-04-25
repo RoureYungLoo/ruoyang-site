@@ -166,6 +166,28 @@ export default defineConfig({
             { text: "排序", link: "/cs_base/ds/sort" },
           ]
         }],
+      "/cs_base/os/": [
+        {
+          text: "Linux",
+          link: "/cs_base/os/linux"
+        }, {
+          text: "Ubuntu 22.04 LTS 安装教程",
+          link: "/cs_base/os/ubuntu2204"
+        }
+
+      ],
+      "/db/nosql/redis/": [
+        {
+          text: "命令手册",
+          link: "/db/nosql/redis/command-reference"
+        }, {
+          text: "Redis Lua",
+          link: "/db/nosql/redis/redis-lua"
+        }, {
+          text: "Lua Redis",
+          link: "/db/nosql/redis/lua-redis"
+        }
+      ],
       "/langs/html/": [
         {
           text: "HTML",
@@ -401,12 +423,12 @@ export default defineConfig({
           ],
         },
       ],
-// "/about":[
-//   {
-//     text: "test",
-//     link: "/ttt"
-//   }
-// ]
+      // "/about":[
+      //   {
+      //     text: "test",
+      //     link: "/ttt"
+      //   }
+      // ]
 
     },
 
