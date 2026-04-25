@@ -143,10 +143,6 @@ export default defineConfig({
         {
           text: "首页",
           link: "/"
-        },
-        {
-          text: "简介",
-          link: "/intro"
         }
       ],
 
@@ -183,6 +179,7 @@ export default defineConfig({
           text: "CSS",
           items: [
             { text: "01", link: "/langs/css/01" },
+            { text: "foo", link: "/langs/css/testfoo" },
           ]
         }
       ],
@@ -404,6 +401,13 @@ export default defineConfig({
           ],
         },
       ],
+// "/about":[
+//   {
+//     text: "test",
+//     link: "/ttt"
+//   }
+// ]
+
     },
 
     lightModeSwitchTitle: "开灯",
