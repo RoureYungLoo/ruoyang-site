@@ -190,10 +190,11 @@ export default defineConfig({
       ],
       "/langs/html/": [
         {
-          text: "HTML",
-          items: [
-            { text: "01", link: "/langs/html/01" },
-          ]
+          text: "HTML 快速入门",
+          link: "/langs/html/"
+          // items: [
+            // { text: "01", link: "/langs/html/01" },
+          // ]
         }
       ],
       "/langs/css/": [
@@ -208,8 +209,9 @@ export default defineConfig({
       "/langs/js/": [
         {
           text: "JavaSript编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
+          link: "/langs/js/"
+          // collapsed: true,
+          // items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
       ],
       "/langs/ts/": [
