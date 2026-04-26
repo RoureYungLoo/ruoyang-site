@@ -924,4 +924,61 @@ article，网页文章
 
 1. 客户端请求DNS，拿到服务器IP
 2. 向IP发送HTTP请求，服务器接收并处理请求
-3. 
+
+# 资源推荐
+## 官方资源
+
+- [Web 开发技术 | MDN](https://developer.mozilla.org/zh-CN/docs/Web)
+- [W3C HTML](https://www.w3.org/html/)
+- [HTML Standard ](https://html.spec.whatwg.org/multipage/)
+- [DOM Standard ](https://dom.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [HTML5 - ](https://www.w3.org/html/ig/zh/wiki/HTML5)
+
+## 书籍推荐
+
+- 《HTML5+CSS3网页设计与制作案例教程》第2版
+- 《Head first HTML&CSS》+W3CSchool文档
+- 《CSS权威指南（第三版）》
+- 《精通CSS》
+- 《图解CSS3：核心技术与案例实践》
+- 《CSS秘密花园》
+- 《CSS禅意花园》
+- 《CSS揭秘》
+- 《JavaScript DOM编程艺术》
+- 《JavaScript高级程序设计》
+- 《JavaScript语言精粹》
+- 《你不知道的JavaScript》上中下卷
+- 《JavaScript设计模式》
+- 《JavaScript模式》
+- 《高性能网站建设指南》
+- 《高性能网站进阶》
+- 《高性能JavaScript》
+- 《高性能HTML5》
+- 《图解HTTP》
+- 《HTTP权威指南》
+- 《锋利的jQuery》
+- 《数据结构和算法的JavaScript描述》
+- 《JavaScript编程精解》
+- 《JavaScript启示录》
+- 《JavaScript权威指南》
+- 《JavaScript框架设计》
+- 《HTML5 Canvas核心技术 图形动画与游戏开发》
+- 《浪潮之巅》
+- 《高性能网站建设进阶指南：Web开发者性能优化最佳实践》
+
+## 网络教程
+
+- [MDN中文文档](https://developer.mozilla.org/zh-CN/docs/Web)
+- [HTML菜鸟教程](https://www.runoob.com/html/html-tutorial.html)
+- [HTMLW3C教程](https://www.w3cschool.cn/html/)
+- [CSDN博客1](https://blog.csdn.net/weixin_52163352/article/details/109562595)
+- [CSDN博客2](https://blog.csdn.net/zong596568821xp/article/details/83277729)
+
+## 技术博客
+
+- [张鑫旭的个人主页](https://www.zhangxinxu.com/)
+- [ES6 入教程](https://es6.ruanyifeng.com/)
+- [JavaScript](https://wangdoc.com/javascript/)
+- [现代 JavaScript 教程](https://zh.javascript.info/)
+- [CSS：层叠样式表 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
