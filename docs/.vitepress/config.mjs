@@ -54,7 +54,7 @@ export default defineConfig({
               { text: "Python", link: "/langs/py/" },
               { text: "Golang", link: "/langs/go/" },
               { text: "SQL", link: "/langs/sql/" },
-              // { text: "Lua", link: "/langs/lua/" },
+              { text: "Lua", link: "/langs/lua/" },
             ],
           },
         ],
@@ -317,8 +317,7 @@ export default defineConfig({
       "/langs/lua/": [
         {
           text: "Lua编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
+          link: "/langs/lua/"
         },
       ],
       "/db/sql/mysql/": [
