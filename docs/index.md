@@ -1,10 +1,15 @@
 ---
 layout: home
 ---
+# 最近更新
+
+[linux配置samba共享](/other/samba)
 
 # 技术组件
 
-**网关：** Nginx | Kong | Apisix | Zuul | Spring Cloud Gateway
+## 网关
+- [Nginx](nginx/index.md) 
+- Kong | Apisix | Zuul | Spring Cloud Gateway
 
 **缓存：** Redis | MemCached | OsCache | EhCache | Caffeine | Redisson
 
