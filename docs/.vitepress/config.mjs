@@ -69,27 +69,17 @@ export default defineConfig({
       { text: "虚拟机", link: "/jvm" },
 
       {
-        text: "数据存储",
+        text: "数据库",
         items: [
           { text: "简介", link: "/db/" },
-          {
-            text: ">>>SQL<<<",
-            items: [
-              { text: "MySQL", link: "/db/sql/mysql/" },
-              { text: "SQL Server", link: "/db/sql/sqlserver/" },
-            ],
-          },
-          {
-            text: ">>NoSQL<<",
-            items: [
-              { text: "Redis", link: "/db/nosql/redis/" },
-              { text: "ValKey", link: "/db/nosql/valkey/" },
-            ],
-          },
+          { text: "MySQL", link: "/db/sql/mysql/" },
+          { text: "SQL Server", link: "/db/sql/sqlserver/" },
+          { text: "Redis", link: "/db/nosql/redis/" },
+          { text: "MongoDB", link: "/db/nosql/mongodb/" },
         ],
       },
       {
-        text: "应用通信",
+        text: "消息队列",
         items: [
           { text: "RabbitMQ", link: "/mq/rabbitmq/" },
           { text: "Apollo", link: "/mq/apollo/" },
@@ -117,7 +107,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "高级技术",
+        text: "中间件",
         items: [
           { text: "lucene", link: "/seaeng/lucene/" },
           { text: "ElasticSearch", link: "/seaeng/elastic/" },
@@ -145,7 +135,18 @@ export default defineConfig({
           link: "/"
         }
       ],
-
+      "/db/nosql/mongodb/": [
+        {
+          text: "MongoDB快速入门",
+          link: "/db/nosql/mongodb/"
+        }
+      ],
+      "/nginx/": [
+        {
+          text: "Nginx 快速入门",
+          link: "/nginx"
+        }
+      ],
       "/cs_base/alg/": [
         {
           text: "算法分析设计",
@@ -193,7 +194,7 @@ export default defineConfig({
           text: "HTML 快速入门",
           link: "/langs/html/"
           // items: [
-            // { text: "01", link: "/langs/html/01" },
+          // { text: "01", link: "/langs/html/01" },
           // ]
         }
       ],
