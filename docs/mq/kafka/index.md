@@ -537,7 +537,7 @@ https://github.com/lichengchuan/KafkaWebUIByLCC
 
 👉 Kafka 的很多“定时行为”不是简单 Timer，而是高性能时间轮
 
-## Controller & 集群元数据（KRaft )
+## Controller & 集群元数据（KRaft)
 
 ### 必补内容
 
