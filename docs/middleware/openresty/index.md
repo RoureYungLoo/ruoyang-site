@@ -38,7 +38,9 @@ http {
         server_name  localhost;
         location / {
             content_by_lua '
+                ngx.header["Content-Type"] = "application/json; charset=utf-8"
                 ngx.say("hello, world")
+		        ngx.exit(200)
             ';
         }
     }
