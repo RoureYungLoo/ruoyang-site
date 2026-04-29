@@ -111,6 +111,7 @@ export default defineConfig({
         items: [
           { text: "Lucene", link: "/middleware/lucene/" },
           { text: "ElasticSearch", link: "/middleware/es/" },
+          { text: "Open Resty", link: "/middleware/openresty/" },
         ],
       },
       {
@@ -435,6 +436,12 @@ export default defineConfig({
         {
           text: "Elastic Search",
           link: "/middleware/es/"
+        }
+      ],
+      "/middleware/openresty/": [
+        {
+          text: "Open Resty",
+          link: "/middleware/openresty/"
         }
       ]
 
