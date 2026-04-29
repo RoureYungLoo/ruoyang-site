@@ -109,8 +109,8 @@ export default defineConfig({
       {
         text: "中间件",
         items: [
-          { text: "lucene", link: "/seaeng/lucene/" },
-          { text: "ElasticSearch", link: "/seaeng/elastic/" },
+          { text: "Lucene", link: "/middleware/lucene/" },
+          { text: "ElasticSearch", link: "/middleware/es/" },
         ],
       },
       {
@@ -431,6 +431,12 @@ export default defineConfig({
       //     link: "/ttt"
       //   }
       // ]
+      "/middleware/es/": [
+        {
+          text: "Elastic Search",
+          link: "/middleware/es/"
+        }
+      ]
 
     },
 
