@@ -53,9 +53,9 @@ user2:1002:
 ## 创建共享目录, 设置权限
 
 ```bash
-mkdir /data/share
-chown nobody:nobody /cactus
-chmod 777 /cactus 
+mkdir /data/aaa
+chown nobody:nobody /data/aaa
+chmod 777 /data/aaa
 ```
 
 ## 启动smb服务
