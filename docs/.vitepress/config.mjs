@@ -432,6 +432,18 @@ export default defineConfig({
       //     link: "/ttt"
       //   }
       // ]
+      "/mq/kafka/": [
+        {
+          text: "Kafka 快速入门",
+          link: "/mq/kafka/"
+        }
+      ],
+      "/mq/rocketmq/": [
+        {
+          text: "RocketMQ 快速入门",
+          link: "/mq/rocketmq/"
+        }
+      ],
       "/middleware/es/": [
         {
           text: "Elastic Search",
