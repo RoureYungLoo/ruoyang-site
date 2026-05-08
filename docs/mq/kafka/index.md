@@ -305,11 +305,10 @@ This is my second event
 
 # 资源推荐
 
-- [Apache Kafka](https://kafka.apache.org/documentation/#)
+- [Apache Kafka 官方文档](https://kafka.apache.org/42/getting-started/introduction/)
 - [【布客】kafka 中文翻译](https://kafka.apachecn.org/)
 - [四万字32图，Kafka知识体系保姆级教程宝典 - 知乎](https://zhuanlan.zhihu.com/p/426311627)
 - [Kafka 中文文档 - ApacheCN](https://kafka1x.apachecn.org/documentation.html)
-- [Apache Kafka 概述 - Apache kafka中文手册](https://www.dba.cn/book/apache_kafka/APACHEKAFKAJiaoCheng/APACHEKAFKAGaiShu.html)
 - [kafka使用教程、快速上手_kafka教程-CSDN博客](https://blog.csdn.net/CSDN_Admin0/article/details/122854762)
 - [kafka 中文文档](https://kafka.cadn.net.cn/documentation/)
 - [Kafka入门（一）](https://zhuanlan.zhihu.com/p/19882905684)
@@ -323,7 +322,6 @@ This is my second event
 - https://www.liangjunfeng.cn/docs/kafka/intro
 - https://blog.csdn.net/qq_44787816/article/details/136802901
 - https://cloud.tencent.com/developer/article/1547380
-- https://zhuanlan.zhihu.com/p/698928252
 
 
 
