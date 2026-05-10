@@ -201,11 +201,8 @@ export default defineConfig({
       ],
       "/langs/css/": [
         {
-          text: "CSS",
-          items: [
-            { text: "01", link: "/langs/css/01" },
-            { text: "foo", link: "/langs/css/testfoo" },
-          ]
+          text: "CSS 快速入门",
+          link: "/langs/css/"
         }
       ],
       "/langs/js/": [
