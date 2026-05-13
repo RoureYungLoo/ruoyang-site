@@ -34,7 +34,7 @@ Apache Kafka是一个事件流平台。
 2. 持久可靠地**存储**事件流
 3. **处理**事件流
 
-# 为什么要使用kafka
+# 为什么要使用Kafka？
 
 1. 削峰填谷。应对瞬时突发流量
 2. 解耦。允许独立的扩展或修改两边的处理过程，只要确保它们遵守同样的接口约束。
@@ -68,7 +68,7 @@ Apache Kafka是一个事件流平台。
 
 事件具有键、值、时间戳和可选的元数据标头
 
-## Broker
+## 代理 Broker
 
 服务代理节点。Broker 是 Kafka 的服务节点，即 Kafka 的服务器。
 
@@ -104,13 +104,40 @@ Partition中每条**message**的位置信息，是一个**单调递增且不变�
 
 每个 partition 选举一个 server 作为“leader”
 
-### leader
+### 主副本 leader
 
-leader partition负责读写
+leader partition 负责读写
 
-### follower
+### 从副本 follower
 
 follower 负责与 leader 同步数据
+
+![Kafka](./imgs/kafka02.png)
+
+![](./imgs/kafka03.jpg)
+
+
+
+层级关系:
+
+- Topic A
+  - Partition-0
+    - Leader (Broker-0)
+    - Follower (Broker-1)
+    - Follower  (Broker-2)
+  - Partition-1
+    - Follower (Broker-0)
+    - Leader (Broker-1)
+    - Follower  (Broker-2)
+- Topic B
+  - Partition-0
+    - Follower (Broker-0)
+    - Leader   (Broker-1)
+    - Follower  (Broker-2)
+  - Partition-1
+    - Leader (Broker-0)
+    - Follower  (Broker-1)
+    - Follower  (Broker-2)
 
 ## 消费者组 Consumer Group
 
@@ -338,33 +365,13 @@ https://github.com/lichengchuan/KafkaWebUIByLCC
 - 《Apache Kafka源码剖析》
 - 《**深入理解Kafka：核心设计与实践原理**》
 
-- **入门**
+- 胡夕《Kafka实战》, 入门
 
-胡夕的《Kafka实战》详细的介绍了Kafka的部署、开发、运营、监控及优化等常规性操作等,帮助你快速上手及应用。
+- 朱忠华的《深入理解Kafka：核心设计与实践原理》, 进阶
 
-- **进阶**
+- 郑奇煌的《Kafka技术内幕》, 高级
 
-朱忠华的《深入理解Kafka：核心设计与实践原理》笔名朱小厮,系统的讲解了Kafka的各个组件的内部原理等,帮助你系统化的学习Kafka。
-
-- **高级**
-
-郑奇煌的《Kafka技术内幕》从源码层面深入剖析Kafka各部件的实现原理,通过源码让你学习到Kafka诸多组件的实现细节。
-
-- **实战**
-
-石臻臻的《石臻臻的杂货铺》公众号,包含大量实战、避坑及源码讲解,重点是持续更新,帮助你在实战过程中少踩坑、多实践。
-
-- **动态**
-
-《[kafka最新动态 - OrcHome](https://link.juejin.cn?target=https%3A%2F%2Fwww.orchome.com%2Fkafka%2Fnews)》了解各版本的新特性、优化、存在的bug.
-
-- **社区**
-
-《[Apache Kafka](https://link.juejin.cn?target=https%3A%2F%2Fkafka.apache.org%2F)》全方位与多维度了解Kafka的前世今生。
-
-《[Log in - ASF JIRA](https://link.juejin.cn?target=https%3A%2F%2Fissues.apache.org%2Fjira%2Fprojects%2Fkafka)》获取大家经常遇到的问题可避免踩坑，成为Kafka社区的Contributor可以从这里开始 。
-
-《[Kafka Improvement Proposals - Apache Kafka - Apach...](https://link.juejin.cn?target=https%3A%2F%2Fcwiki.apache.org%2Fconfluence%2Fdisplay%2FKAFKA%2FKafka%2BImprovement%2BProposals)》洞察Kafka新特性的由来及前沿发展
+- 石臻臻的《石臻臻的杂货铺》,  实战
 
 # 知识体系
 
