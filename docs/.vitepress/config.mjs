@@ -136,6 +136,18 @@ export default defineConfig({
           link: "/"
         }
       ],
+      "/build_tool/maven":[
+        {
+          text: "Maven快速入门",
+          link: "/build_tool/maven"
+        }
+      ],
+      "/build_tool/gradle":[
+        {
+          text: "gradle快速入门",
+          link: "/build_tool/gradle"
+        }
+      ],
       "/db/nosql/mongodb/": [
         {
           text: "MongoDB快速入门",
