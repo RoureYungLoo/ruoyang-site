@@ -339,16 +339,13 @@ This is my second event
 - [kafka使用教程、快速上手_kafka教程-CSDN博客](https://blog.csdn.net/CSDN_Admin0/article/details/122854762)
 - [kafka 中文文档](https://kafka.cadn.net.cn/documentation/)
 - [Kafka入门（一）](https://zhuanlan.zhihu.com/p/19882905684)
-- https://dunwu.github.io/bigdata-tutorial/kafka/
-- https://www.cnblogs.com/along21/p/10278100.html
-- https://github.com/crisxuan/bestJavaer/tree/master/kafka
-- https://cloud.tencent.com/developer/article/1898376
-- https://blog.csdn.net/sinat_34814635/article/details/111460317
-- https://devpress.csdn.net/xian/68945d86080e555a88d61dbe.html?
-- https://blog.csdn.net/general_zy/article/details/129227041?o
-- https://www.liangjunfeng.cn/docs/kafka/intro
-- https://blog.csdn.net/qq_44787816/article/details/136802901
-- https://cloud.tencent.com/developer/article/1547380
+- [Kafka 教程](https://dunwu.github.io/bigdata-tutorial/kafka/)
+- [三万字  Kafka 知识体系保姆级教程宝典](https://cloud.tencent.com/developer/article/1898376)
+- [Kafka](https://blog.csdn.net/sinat_34814635/article/details/111460317)
+- [kafka全解](https://blog.csdn.net/general_zy/article/details/129227041)
+- [Kafka 简介](https://www.liangjunfeng.cn/docs/kafka/intro)
+- [Kafka详细教程（一）](https://blog.csdn.net/qq_44787816/article/details/136802901)
+- [学习 Kafka 入门知识看这一篇就够了！（万字长文）](https://cloud.tencent.com/developer/article/1547380)
 
 
 
@@ -364,13 +361,9 @@ https://github.com/lichengchuan/KafkaWebUIByLCC
 - 《kafka stream实战》
 - 《Apache Kafka源码剖析》
 - 《**深入理解Kafka：核心设计与实践原理**》
-
 - 胡夕《Kafka实战》, 入门
-
 - 朱忠华的《深入理解Kafka：核心设计与实践原理》, 进阶
-
 - 郑奇煌的《Kafka技术内幕》, 高级
-
 - 石臻臻的《石臻臻的杂货铺》,  实战
 
 # 知识体系

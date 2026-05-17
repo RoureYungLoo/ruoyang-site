@@ -7,6 +7,8 @@ layout: home
 
 # 技术组件
 
+[pmd](pmd)
+
 ## 网关
 - [Nginx](nginx/index.md) 
 - Kong | Apisix | Zuul | Spring Cloud Gateway
@@ -37,7 +39,7 @@ layout: home
 
 **工具类库：** commons-io | hutool | guvava
 
-**构建工具：** [Maven](./build_tool/maven) | [Gradle](/build_tool/gradle) | Ant 
+**构建工具：** [Maven](/build_tool/maven) | [Gradle](/build_tool/gradle) | Ant 
   
 **集成部署：** Docker | Jenkins | GitLab | Maven | Github Actions
 
