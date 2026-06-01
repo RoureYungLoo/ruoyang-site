@@ -7,8 +7,6 @@ layout: home
 
 # 技术组件
 
-[pmd](pmd)
-
 ## 网关
 - [Nginx](nginx/index.md) 
 - Kong | Apisix | Zuul | Spring Cloud Gateway
