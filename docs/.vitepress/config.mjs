@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 let sidebar_cpp = "/program-langs/cpp/";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: " ",
+  title: "禄若阳的 Tech Notes",
   // description: " ",
   head: [
     [
@@ -14,19 +14,23 @@ export default defineConfig({
       },
     ],
   ],
-  lang: "CN",
+  lang: "zh-CN",
   ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "计算机基础",
+        text: "基础原理",
         items: [
-          { text: "组成原理", link: "/base/poc/" },
-          { text: "操作系统", link: "/base/os/" },
-          { text: "数据结构", link: "/base/ds/" },
-          { text: "计算机网络", link: "/base/net/net.md" },
+          { text: "计算机网络", link: "/cs_base/net/" },
+          { text: "计算机组成原理", link: "/cs_base/poc/" },
+          { text: "操作系统", link: "/cs_base/os/" },
+          { text: "数据结构", link: "/cs_base/ds/" },
+          { text: "算法分析设计", link: "/cs_base/alg/" },
         ],
       },
       {
@@ -51,38 +55,28 @@ export default defineConfig({
               { text: "Python", link: "/langs/py/" },
               { text: "Golang", link: "/langs/go/" },
               { text: "SQL", link: "/langs/sql/" },
-              // { text: "Lua", link: "/langs/lua/" },
+              { text: "Lua", link: "/langs/lua/" },
             ],
           },
         ],
       },
       {
-        text: "并发 | 网络",
+        text: "并发|网络",
         items: [
           { text: "并发编程", link: "/con/" },
           { text: "网络编程", link: "/net/" },
         ],
       },
-      { text: "JVM", link: "/jvm" },
+      { text: "虚拟机", link: "/jvm" },
 
       {
         text: "数据库",
         items: [
           { text: "简介", link: "/db/" },
-          {
-            text: ">>>SQL<<<",
-            items: [
-              { text: "MySQL", link: "/db/sql/mysql/" },
-              { text: "SQL Server", link: "/db/sql/sqlserver/" },
-            ],
-          },
-          {
-            text: ">>NoSQL<<",
-            items: [
-              { text: "Redis", link: "/db/nosql/redis/" },
-              { text: "ValKey", link: "/db/nosql/valkey/" },
-            ],
-          },
+          { text: "MySQL", link: "/db/sql/mysql/" },
+          { text: "SQL Server", link: "/db/sql/sqlserver/" },
+          { text: "Redis", link: "/db/nosql/redis/" },
+          { text: "MongoDB", link: "/db/nosql/mongodb/" },
         ],
       },
       {
@@ -97,7 +91,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "Spring教程",
+        text: "Spring系列",
         items: [
           { text: "Spring Framework", link: "/spring/framework/" },
           { text: "Spring Boot", link: "/spring/boot/" },
@@ -107,21 +101,22 @@ export default defineConfig({
         ],
       },
       {
-        text: "版本管理",
+        text: "DevOps",
         items: [
           { text: "Git", link: "/vercon/git/" },
           { text: "SVN", link: "/vercon/svn/" },
         ],
       },
       {
-        text: "搜索引擎",
+        text: "中间件",
         items: [
-          { text: "lucene", link: "/seaeng/lucene/" },
-          { text: "ElasticSearch", link: "/seaeng/elastic/" },
+          { text: "Lucene", link: "/middleware/lucene/" },
+          { text: "ElasticSearch", link: "/middleware/es/" },
+          { text: "Open Resty", link: "/middleware/openresty/" },
         ],
       },
       {
-        text: "常用算法",
+        text: "必备算法",
         items: [
           { text: "查找算法", link: "/algo/search" },
           { text: "排序算法", link: "/algo/sort/" },
@@ -136,30 +131,99 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/base/ds/": [
+      "/": [
+        {
+          text: "首页",
+          link: "/"
+        }
+      ],
+      "/build_tool/maven":[
+        {
+          text: "Maven快速入门",
+          link: "/build_tool/maven"
+        }
+      ],
+      "/build_tool/gradle":[
+        {
+          text: "gradle快速入门",
+          link: "/build_tool/gradle"
+        }
+      ],
+      "/db/nosql/mongodb/": [
+        {
+          text: "MongoDB快速入门",
+          link: "/db/nosql/mongodb/"
+        }
+      ],
+      "/nginx/": [
+        {
+          text: "Nginx 快速入门",
+          link: "/nginx"
+        }
+      ],
+      "/cs_base/alg/": [
+        {
+          text: "算法分析设计",
+          collapsed: false,
+          items: [
+            { text: "算法分析1", link: "/cs_base/alg/01" },
+            { text: "算法设计2", link: "/cs_base/alg/02" },
+          ]
+        }
+      ],
+      "/cs_base/ds/": [
+        {
+          text: "数据结构",
+          collapsed: false,
+          items: [
+            { text: "散列表", link: "/cs_base/ds/hash_table" },
+            { text: "查找", link: "/cs_base/ds/search" },
+            { text: "排序", link: "/cs_base/ds/sort" },
+          ]
+        }],
+      "/cs_base/os/": [
+        {
+          text: "Linux",
+          link: "/cs_base/os/linux"
+        }, {
+          text: "Ubuntu 22.04 LTS 安装教程",
+          link: "/cs_base/os/ubuntu2204"
+        }
 
+      ],
+      "/db/nosql/redis/": [
+        {
+          text: "命令手册",
+          link: "/db/nosql/redis/command-reference"
+        }, {
+          text: "Redis Lua",
+          link: "/db/nosql/redis/redis-lua"
+        }, {
+          text: "Lua Redis",
+          link: "/db/nosql/redis/lua-redis"
+        }
       ],
       "/langs/html/": [
         {
-          text: "HTML",
-          items: [
-            { text: "01", link: "/langs/html/01" },
-          ]
+          text: "HTML 快速入门",
+          link: "/langs/html/"
+          // items: [
+          // { text: "01", link: "/langs/html/01" },
+          // ]
         }
       ],
       "/langs/css/": [
         {
-          text: "CSS",
-          items: [
-            { text: "01", link: "/langs/css/01" },
-          ]
+          text: "CSS 快速入门",
+          link: "/langs/css/"
         }
       ],
       "/langs/js/": [
         {
           text: "JavaSript编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
+          link: "/langs/js/"
+          // collapsed: true,
+          // items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
       ],
       "/langs/ts/": [
@@ -264,8 +328,19 @@ export default defineConfig({
       "/langs/lua/": [
         {
           text: "Lua编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
+          link: "/langs/lua/"
+        },
+      ],
+      "/db/sql/mysql/": [
+        {
+          text: "MySQL数据库",
+          // collapsed: false,
+          items: [
+            {
+              text: "MySQL学习笔记",
+              link: "/db/sql/mysql/MySQL学习笔记"
+            }
+          ],
         },
       ],
       "/interviews/": [
@@ -275,7 +350,7 @@ export default defineConfig({
         },
         {
           text: "Java 面试题",
-          collapsed: false,
+          // collapsed: true,
           items: [
             { text: "基础", link: "/interviews/java/base.md" },
             { text: "继承", link: "/interviews/java/extends.md" },
@@ -361,6 +436,37 @@ export default defineConfig({
           ],
         },
       ],
+      // "/about":[
+      //   {
+      //     text: "test",
+      //     link: "/ttt"
+      //   }
+      // ]
+      "/mq/kafka/": [
+        {
+          text: "Kafka 快速入门",
+          link: "/mq/kafka/"
+        }
+      ],
+      "/mq/rocketmq/": [
+        {
+          text: "RocketMQ 快速入门",
+          link: "/mq/rocketmq/"
+        }
+      ],
+      "/middleware/es/": [
+        {
+          text: "Elastic Search",
+          link: "/middleware/es/"
+        }
+      ],
+      "/middleware/openresty/": [
+        {
+          text: "Open Resty",
+          link: "/middleware/openresty/"
+        }
+      ]
+
     },
 
     lightModeSwitchTitle: "开灯",
@@ -387,8 +493,8 @@ export default defineConfig({
       copyright: `版权所有 © 2024-${new Date().getFullYear()} 禄若阳`,
     },
     docFooter: {
-      prev: "温故而知新",
-      next: "学而时习之",
+      prev: "上一页: 温故而知新",
+      next: "下一页: 学而时习之",
     },
     outline: {
       level: [1, 6],
@@ -408,6 +514,6 @@ export default defineConfig({
   },
   lastUpdated: true,
   markdown: {
-    lineNumbers: true
+    lineNumbers: false
   }
 });
