@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as t}from"./chunks/framework.DXGyWiRo.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"langs/java/Java.md","filePath":"langs/java/Java.md","lastUpdated":1736006154000}'),s={name:"langs/java/Java.md"};function n(r,o,c,d,p,l){return e(),t("div")}const m=a(s,[["render",n]]);export{i as __pageData,m as default};
