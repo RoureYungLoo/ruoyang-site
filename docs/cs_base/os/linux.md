@@ -149,3 +149,14 @@ text
 - 支持单调时钟（如系统启动后 5 分钟）
 
 不过 crontab 依旧是最简单、最通用的定时任务方案，特别适合单用户、快速部署的环境。
+
+# 常见问题
+
+## Connection 'ens33' is not available on device ens33 because device is strictly unmanaged
+
+出现场景: Vmware WorkStation Pro 异常关闭后, 重启虚拟机后, 虚拟机无网络
+
+```bash
+nmcli n # 查看网络托管状态
+nmcli n on # 开启网络托管
+```
