@@ -19,7 +19,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
-      provider: 'local'
+      provider: "local",
     },
     nav: [
       { text: "首页", link: "/" },
@@ -125,7 +125,7 @@ export default defineConfig({
       },
       {
         text: "面试题",
-        link: "/interviews/"
+        link: "/interviews/",
       },
       { text: "关于", link: "/about" },
     ],
@@ -134,32 +134,32 @@ export default defineConfig({
       "/": [
         {
           text: "首页",
-          link: "/"
-        }
+          link: "/",
+        },
       ],
-      "/build_tool/maven":[
+      "/build_tool/maven": [
         {
           text: "Maven快速入门",
-          link: "/build_tool/maven"
-        }
+          link: "/build_tool/maven",
+        },
       ],
-      "/build_tool/gradle":[
+      "/build_tool/gradle": [
         {
           text: "gradle快速入门",
-          link: "/build_tool/gradle"
-        }
+          link: "/build_tool/gradle",
+        },
       ],
       "/db/nosql/mongodb/": [
         {
           text: "MongoDB快速入门",
-          link: "/db/nosql/mongodb/"
-        }
+          link: "/db/nosql/mongodb/",
+        },
       ],
       "/nginx/": [
         {
           text: "Nginx 快速入门",
-          link: "/nginx"
-        }
+          link: "/nginx",
+        },
       ],
       "/cs_base/alg/": [
         {
@@ -168,8 +168,8 @@ export default defineConfig({
           items: [
             { text: "算法分析1", link: "/cs_base/alg/01" },
             { text: "算法设计2", link: "/cs_base/alg/02" },
-          ]
-        }
+          ],
+        },
       ],
       "/cs_base/ds/": [
         {
@@ -179,49 +179,56 @@ export default defineConfig({
             { text: "散列表", link: "/cs_base/ds/hash_table" },
             { text: "查找", link: "/cs_base/ds/search" },
             { text: "排序", link: "/cs_base/ds/sort" },
-          ]
-        }],
+          ],
+        },
+      ],
       "/cs_base/os/": [
         {
           text: "Linux",
-          link: "/cs_base/os/linux"
-        }, {
+          link: "/cs_base/os/linux",
+        },
+        {
           text: "Ubuntu 22.04 LTS 安装教程",
-          link: "/cs_base/os/ubuntu2204"
-        }
-
+          link: "/cs_base/os/ubuntu2204",
+        },
       ],
       "/db/nosql/redis/": [
         {
+          text: "Lua 快速入门",
+          link: "/db/nosql/redis/",
+        },
+        {
           text: "命令手册",
-          link: "/db/nosql/redis/command-reference"
-        }, {
+          link: "/db/nosql/redis/command-reference",
+        },
+        {
           text: "Redis Lua",
-          link: "/db/nosql/redis/redis-lua"
-        }, {
+          link: "/db/nosql/redis/redis-lua",
+        },
+        {
           text: "Lua Redis",
-          link: "/db/nosql/redis/lua-redis"
-        }
+          link: "/db/nosql/redis/lua-redis",
+        },
       ],
       "/langs/html/": [
         {
           text: "HTML 快速入门",
-          link: "/langs/html/"
+          link: "/langs/html/",
           // items: [
           // { text: "01", link: "/langs/html/01" },
           // ]
-        }
+        },
       ],
       "/langs/css/": [
         {
           text: "CSS 快速入门",
-          link: "/langs/css/"
-        }
+          link: "/langs/css/",
+        },
       ],
       "/langs/js/": [
         {
           text: "JavaSript编程语言",
-          link: "/langs/js/"
+          link: "/langs/js/",
           // collapsed: true,
           // items: [{ text: "1", link: "/program-langs/c/1/" }],
         },
@@ -245,7 +252,10 @@ export default defineConfig({
             { text: "C语言指针", link: "/langs/c/C语言指针" },
             { text: "C语言字符和字符串", link: "/langs/c/C语言字符和字符串" },
             { text: "格式化输入和输出", link: "/langs/c/格式化输入和输出" },
-            { text: "结构体_共用体_枚举_位域", link: "/langs/c/结构体_共用体_枚举_位域" },
+            {
+              text: "结构体_共用体_枚举_位域",
+              link: "/langs/c/结构体_共用体_枚举_位域",
+            },
           ],
         },
       ],
@@ -273,9 +283,7 @@ export default defineConfig({
         {
           text: "C#编程语言",
           collapsed: true,
-          items: [
-            { text: "C#01", link: "/program-langs/c/1/" }
-          ],
+          items: [{ text: "C#01", link: "/program-langs/c/1/" }],
         },
       ],
       "/langs/java/": [
@@ -328,7 +336,7 @@ export default defineConfig({
       "/langs/lua/": [
         {
           text: "Lua编程语言",
-          link: "/langs/lua/"
+          link: "/langs/lua/",
         },
       ],
       "/db/sql/mysql/": [
@@ -338,15 +346,15 @@ export default defineConfig({
           items: [
             {
               text: "MySQL学习笔记",
-              link: "/db/sql/mysql/MySQL学习笔记"
-            }
+              link: "/db/sql/mysql/MySQL学习笔记",
+            },
           ],
         },
       ],
       "/interviews/": [
         {
           text: "计算机网络",
-          link: "/interviews/network/"
+          link: "/interviews/network/",
         },
         {
           text: "Java 面试题",
@@ -362,29 +370,23 @@ export default defineConfig({
             { text: "I/O", link: "/interviews/java/io.md" },
             { text: "多线程", link: "/interviews/java/multi-thread.md" },
             { text: "并发", link: "/interviews/java/concurrency.md" },
-            { text: "JVM", link: "/interviews/java/jvm.md" }
+            { text: "JVM", link: "/interviews/java/jvm.md" },
           ],
         },
         {
           text: "MySQL 面试题",
           collapsed: false,
-          items: [
-            { text: "MySQL01", link: "/interviews/mysql/mysql.md" },
-          ],
+          items: [{ text: "MySQL01", link: "/interviews/mysql/mysql.md" }],
         },
         {
           text: "Redis 面试题",
           collapsed: false,
-          items: [
-            { text: "Redis01", link: "/interviews/redis/redis.md" },
-          ],
+          items: [{ text: "Redis01", link: "/interviews/redis/redis.md" }],
         },
         {
           text: "Spring Framework 面试题",
           collapsed: false,
-          items: [
-            { text: "Spring01", link: "/interviews/spring/01.md" },
-          ],
+          items: [{ text: "Spring01", link: "/interviews/spring/01.md" }],
         },
         {
           text: "Spring MVC 面试题",
@@ -398,7 +400,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Spring Boot", link: "/interviews/springboot/01.md" },
-
           ],
         },
         {
@@ -406,7 +407,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Spring Cloud 01", link: "/interviews/springcloud/01.md" },
-
           ],
         },
       ],
@@ -445,28 +445,27 @@ export default defineConfig({
       "/mq/kafka/": [
         {
           text: "Kafka 快速入门",
-          link: "/mq/kafka/"
-        }
+          link: "/mq/kafka/",
+        },
       ],
       "/mq/rocketmq/": [
         {
           text: "RocketMQ 快速入门",
-          link: "/mq/rocketmq/"
-        }
+          link: "/mq/rocketmq/",
+        },
       ],
       "/middleware/es/": [
         {
           text: "Elastic Search",
-          link: "/middleware/es/"
-        }
+          link: "/middleware/es/",
+        },
       ],
       "/middleware/openresty/": [
         {
           text: "Open Resty",
-          link: "/middleware/openresty/"
-        }
-      ]
-
+          link: "/middleware/openresty/",
+        },
+      ],
     },
 
     lightModeSwitchTitle: "开灯",
@@ -501,19 +500,20 @@ export default defineConfig({
       label: "本页内容",
     },
     editLink: {
-      pattern: "https://github.com/RoureYungLoo/ruoyang-site/tree/main/docs/:path",
+      pattern:
+        "https://github.com/RoureYungLoo/ruoyang-site/tree/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
     lastUpdated: {
-      text: '最近更新',
+      text: "最近更新",
       formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
-    }
+        dateStyle: "full",
+        timeStyle: "medium",
+      },
+    },
   },
   lastUpdated: true,
   markdown: {
-    lineNumbers: false
-  }
+    lineNumbers: false,
+  },
 });
