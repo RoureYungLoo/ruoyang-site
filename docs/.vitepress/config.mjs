@@ -67,7 +67,7 @@ export default defineConfig({
           { text: "网络编程", link: "/net/" },
         ],
       },
-      { text: "虚拟机", link: "/jvm" },
+      { text: "大数据", link: "/big_data/" },
 
       {
         text: "数据库",
@@ -190,6 +190,12 @@ export default defineConfig({
         {
           text: "Ubuntu 22.04 LTS 安装教程",
           link: "/cs_base/os/ubuntu2204",
+        },
+      ],
+      "/big_data/": [
+        {
+          text: "大数据快速入门",
+          link: "/big_data/",
         },
       ],
       "/db/nosql/redis/": [
