@@ -23,14 +23,32 @@
 - **ClickHouse / Doris / StarRocks**：高性能 OLAP 存储与分析。
 - **数据湖格式**：Apache Iceberg、Apache Hudi、Delta Lake，提供事务、增量读写、时间旅行等能力。
 
+数据仓库
+
+
+
 ### 3. 数据计算与处理
+
+批处理计算
 
 - **MapReduce**：Hadoop 早期批处理模型，已逐步被替代。
 - **Spark**：主流批处理/微批处理引擎，支持 SQL、ML、Graph。
-- **Flink**：主流实时流处理引擎，支持事件时间、精确一次语义。
-- **Storm**：早期实时计算框架。
 - **Hive**：SQL on Hadoop，离线数仓核心。
 - **Tez**：Hive 执行引擎优化。
+
+实时计算
+
+- **Flink**：主流实时流处理引擎，支持事件时间、精确一次语义。
+
+- Spark Structured Streaming
+
+- **Storm**：早期实时计算框架。
+
+SQL / OLAP 分析
+
+- Doris
+- StarRocks
+- ClickHouse
 - **Presto / Trino**：联邦查询引擎，跨数据源交互式分析。
 - **Impala**：Hadoop 上的交互式 SQL 引擎。
 
@@ -46,8 +64,8 @@
 
 - **YARN**：Hadoop 资源管理，调度 MapReduce、Spark 等任务。
 - **Kubernetes**：云原生资源编排，越来越多大数据组件容器化运行。
-- **Mesos**：早期通用资源管理框架。
-- **Volcano / YuniKorn**：K8s 上的批处理/大数据任务调度器。
+- Mesos：早期通用资源管理框架。
+- Volcano / YuniKorn：K8s 上的批处理/大数据任务调度器。
 
 ### 6. 任务调度与工作流
 
@@ -79,7 +97,7 @@
 
 - **Superset**：开源可视化 BI 平台。
 - **Grafana**：监控与指标可视化。
-- **Tableau / Power BI / FineBI / Metabase**：商业或开源 BI 工具。
+- Tableau / Power BI / FineBI / Metabase：商业或开源 BI 工具。
 
 ### 11. 监控运维
 
@@ -98,10 +116,12 @@
 | 类别            | 最主流技术               | 说明                                                |
 | :-------------- | :----------------------- | :-------------------------------------------------- |
 | 数据采集与传输  | **Kafka**                | 事实标准消息队列/事件流平台                         |
-| 数据存储        | **HDFS**                 | 传统自建大数据平台存储底座；云上可用对象存储 S3/OSS |
+| 数据存储        | **HDFS / S3**            | 传统自建大数据平台存储底座；云上可用对象存储 S3/OSS |
 | 批计算          | **Spark**                | 最主流的批处理/微批处理引擎                         |
 | 流计算          | **Flink**                | 实时计算事实标准                                    |
 | 交互式分析/OLAP | **ClickHouse**           | 高性能分析型数据库，社区活跃                        |
+| 数仓            | Hive                     |                                                     |
+| 数据湖/湖仓一体 | Iceberg                  |                                                     |
 | 资源管理与调度  | **YARN**                 | Hadoop 生态标准；云原生趋势用 Kubernetes            |
 | 工作流调度      | **Airflow**              | 最通用的工作流编排平台                              |
 | 数据集成/CDC    | **Flink CDC**            | 实时数据同步主流方案                                |
@@ -110,3 +130,18 @@
 | 可视化 BI       | **Superset**             | 最流行的开源 BI 平台                                |
 | 监控运维        | **Prometheus + Grafana** | 集群与任务监控主流组合                              |
 | 开发语言        | **SQL**                  | 数据分析与数仓核心语言；Java/Scala/Python 按需配合  |
+
+## 学习路线
+
+- Java
+- SQL
+- Linux
+- Hadoop/HDFS
+- Hive
+- Kafka
+- Spark
+- Flink
+- Doris/StarRocks
+- Iceberg/Paimon
+- DolphinScheduler
+- Docker/Kubernetes
