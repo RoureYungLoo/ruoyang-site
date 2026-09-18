@@ -1,10 +1,28 @@
 import { defineConfig } from "vitepress";
+import { sidebar } from "./sidebar/index.mjs";
 
-let sidebar_cpp = "/program-langs/cpp/";
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "禄若阳的 Tech Notes",
-  // description: " ",
+  srcExclude: [
+    "testpkg/**",
+    "code/review/redis/**",
+    "cs_base/alg/{01,02,algorithm_analysis_and_design}.md",
+    "cs_base/ds/{data_structures,hash_table,search,sort}.md",
+    "cs_base/net/network.md",
+    "cs_base/os/operating_systems.md",
+    "cs_base/poc/principles_of_computers.md",
+    "db/nosql/valkey/index.md",
+    "db/sql/sqlserver/index.md",
+    "interviews/java/{annotation,concurrency,extends,io,polymorphism,proxy,reflection}.md",
+    "interviews/bases/index.md",
+    "langs/{csharp,go,sql,ts}/index.md",
+    "langs/cpp/10-C++新特性.md",
+    "langs/java/Java.md",
+    "mq/{activemq,apollo,rabbitmq,zeromq}/index.md",
+    "project/index.md",
+    "seaeng/{elastic,lucene}/index.md",
+    "vercon/svn/index.md",
+  ],
   head: [
     [
       "link",
@@ -15,9 +33,7 @@ export default defineConfig({
     ],
   ],
   lang: "zh-CN",
-  ignoreDeadLinks: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     search: {
       provider: "local",
     },
@@ -42,7 +58,6 @@ export default defineConfig({
               { text: "HTML", link: "/langs/html/" },
               { text: "CSS", link: "/langs/css/" },
               { text: "JS", link: "/langs/js/" },
-              { text: "TS", link: "/langs/ts/" },
             ],
           },
           {
@@ -50,31 +65,19 @@ export default defineConfig({
             items: [
               { text: "C", link: "/langs/c/" },
               { text: "C++", link: "/langs/cpp/" },
-              // { text: "C#", link: "/langs/csharp/" },
               { text: "Java", link: "/langs/java/" },
               { text: "Python", link: "/langs/py/" },
-              { text: "Golang", link: "/langs/go/" },
-              { text: "SQL", link: "/langs/sql/" },
               { text: "Lua", link: "/langs/lua/" },
             ],
           },
         ],
       },
-      {
-        text: "并发|网络",
-        items: [
-          { text: "并发编程", link: "/con/" },
-          { text: "网络编程", link: "/net/" },
-        ],
-      },
       { text: "大数据", link: "/big_data/" },
-
       {
         text: "数据库",
         items: [
           { text: "简介", link: "/db/" },
           { text: "MySQL", link: "/db/sql/mysql/" },
-          { text: "SQL Server", link: "/db/sql/sqlserver/" },
           { text: "Redis", link: "/db/nosql/redis/" },
           { text: "MongoDB", link: "/db/nosql/mongodb/" },
         ],
@@ -82,401 +85,41 @@ export default defineConfig({
       {
         text: "消息队列",
         items: [
-          { text: "RabbitMQ", link: "/mq/rabbitmq/" },
-          { text: "Apollo", link: "/mq/apollo/" },
           { text: "RocketMQ", link: "/mq/rocketmq/" },
           { text: "Kafka", link: "/mq/kafka/" },
-          { text: "ZeroMQ", link: "/mq/zeromq/" },
-          { text: "ActiveMQ", link: "/mq/activemq/" },
         ],
       },
       {
         text: "Spring系列",
         items: [
-          { text: "Spring Framework", link: "/spring/framework/" },
+          { text: "Spring Framework", link: "/spring/base/" },
           { text: "Spring Boot", link: "/spring/boot/" },
           { text: "Spring Cloud", link: "/spring/cloud/" },
-          { text: "Spring Cloud Alibaba", link: "/spring/cloud/alibaba" },
-          { text: "Spring Cloud Netflix", link: "/spring/cloud/netflix" },
         ],
       },
       {
         text: "DevOps",
         items: [
           { text: "Git", link: "/vercon/git/" },
-          { text: "SVN", link: "/vercon/svn/" },
         ],
       },
       {
         text: "中间件",
         items: [
-          { text: "Lucene", link: "/middleware/lucene/" },
           { text: "ElasticSearch", link: "/middleware/es/" },
           { text: "Open Resty", link: "/middleware/openresty/" },
         ],
       },
       {
         text: "必备算法",
-        items: [
-          { text: "查找算法", link: "/algo/search" },
-          { text: "排序算法", link: "/algo/sort/" },
-          { text: "刷题算法", link: "/algo/oj" },
-        ],
+        items: [{ text: "排序算法", link: "/algo/sort/" }],
       },
-      {
-        text: "面试题",
-        link: "/interviews/",
-      },
+      { text: "面试题", link: "/interviews/" },
       { text: "关于", link: "/about" },
     ],
-
-    sidebar: {
-      "/": [
-        {
-          text: "首页",
-          link: "/",
-        },
-      ],
-      "/build_tool/maven": [
-        {
-          text: "Maven快速入门",
-          link: "/build_tool/maven",
-        },
-      ],
-      "/build_tool/gradle": [
-        {
-          text: "gradle快速入门",
-          link: "/build_tool/gradle",
-        },
-      ],
-      "/db/nosql/mongodb/": [
-        {
-          text: "MongoDB快速入门",
-          link: "/db/nosql/mongodb/",
-        },
-      ],
-      "/nginx/": [
-        {
-          text: "Nginx 快速入门",
-          link: "/nginx",
-        },
-      ],
-      "/cs_base/alg/": [
-        {
-          text: "算法分析设计",
-          collapsed: false,
-          items: [
-            { text: "算法分析1", link: "/cs_base/alg/01" },
-            { text: "算法设计2", link: "/cs_base/alg/02" },
-          ],
-        },
-      ],
-      "/cs_base/ds/": [
-        {
-          text: "数据结构",
-          collapsed: false,
-          items: [
-            { text: "散列表", link: "/cs_base/ds/hash_table" },
-            { text: "查找", link: "/cs_base/ds/search" },
-            { text: "排序", link: "/cs_base/ds/sort" },
-          ],
-        },
-      ],
-      "/cs_base/os/": [
-        {
-          text: "Linux",
-          link: "/cs_base/os/linux",
-        },
-        {
-          text: "Ubuntu 22.04 LTS 安装教程",
-          link: "/cs_base/os/ubuntu2204",
-        },
-      ],
-      "/big_data/": [
-        {
-          text: "大数据快速入门",
-          link: "/big_data/",
-        },
-      ],
-      "/db/nosql/redis/": [
-        {
-          text: "Lua 快速入门",
-          link: "/db/nosql/redis/",
-        },
-        {
-          text: "命令手册",
-          link: "/db/nosql/redis/command-reference",
-        },
-        {
-          text: "Redis Lua",
-          link: "/db/nosql/redis/redis-lua",
-        },
-        {
-          text: "Lua Redis",
-          link: "/db/nosql/redis/lua-redis",
-        },
-      ],
-      "/langs/html/": [
-        {
-          text: "HTML 快速入门",
-          link: "/langs/html/",
-          // items: [
-          // { text: "01", link: "/langs/html/01" },
-          // ]
-        },
-      ],
-      "/langs/css/": [
-        {
-          text: "CSS 快速入门",
-          link: "/langs/css/",
-        },
-      ],
-      "/langs/js/": [
-        {
-          text: "JavaSript编程语言",
-          link: "/langs/js/",
-          // collapsed: true,
-          // items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/langs/ts/": [
-        {
-          text: "TypeScript编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/langs/c/": [
-        {
-          text: "C编程语言",
-          // collapsed: false,
-          items: [
-            { text: "C语言概述", link: "/langs/c/C语言概述" },
-            { text: "结构化的C程序设计", link: "/langs/c/结构化的C程序设计" },
-            { text: "C语言程序流程控制", link: "/langs/c/C语言程序流程控制" },
-            { text: "C语言数组", link: "/langs/c/C语言数组" },
-            { text: "C语言指针", link: "/langs/c/C语言指针" },
-            { text: "C语言字符和字符串", link: "/langs/c/C语言字符和字符串" },
-            { text: "格式化输入和输出", link: "/langs/c/格式化输入和输出" },
-            {
-              text: "结构体_共用体_枚举_位域",
-              link: "/langs/c/结构体_共用体_枚举_位域",
-            },
-          ],
-        },
-      ],
-
-      "/langs/cpp/": [
-        {
-          text: "C++编程语言",
-          // collapsed: false,
-          items: [
-            { text: "C++对象技术简介", link: "/langs/cpp/00-C++对象技术简介" },
-            { text: "C++类与对象简介", link: "/langs/cpp/01-类与对象简介" },
-            { text: "C++类的深入剖析一", link: "/langs/cpp/02-类的深入剖析一" },
-            { text: "C++类的深入剖析二", link: "/langs/cpp/03-类的深入剖析二" },
-            { text: "C++运算符重载", link: "/langs/cpp/04-运算符重载" },
-            { text: "C++继承", link: "/langs/cpp/05-C++继承" },
-            { text: "C++多态", link: "/langs/cpp/06-C++多态" },
-            { text: "C++模板", link: "/langs/cpp/07-C++模板" },
-            { text: "C++IO", link: "/langs/cpp/08-C++IO流" },
-            { text: "C++异常", link: "/langs/cpp/09-C++异常处理" },
-            { text: "C++新特性", link: "/langs/cpp/10-C++新特性" },
-          ],
-        },
-      ],
-      "/langs/csharp/": [
-        {
-          text: "C#编程语言",
-          collapsed: true,
-          items: [{ text: "C#01", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/langs/java/": [
-        {
-          text: "Java编程语言",
-          // collapsed: false,
-          items: [
-            { text: "概述与基础", link: "/langs/java/01" },
-            { text: "选择与循环", link: "/langs/java/02" },
-            { text: "类与对象", link: "/langs/java/03" },
-            { text: "数组", link: "/langs/java/04" },
-            { text: "字符串", link: "/langs/java/05" },
-            { text: "继承与多态", link: "/langs/java/06" },
-            { text: "常用类", link: "/langs/java/07" },
-            { text: "内部类、枚举、注解", link: "/langs/java/08" },
-            { text: "接口、Lambda表达式", link: "/langs/java/09" },
-            { text: "泛型与集合", link: "/langs/java/10" },
-            { text: "异常处理", link: "/langs/java/11" },
-            { text: "输入输出(IO)", link: "/langs/java/12" },
-            { text: "GUI编程", link: "/langs/java/13" },
-            { text: "数据库编程", link: "/langs/java/14" },
-            { text: "反射与代理", link: "/langs/java/15" },
-            { text: "多线程与并发", link: "/langs/java/16" },
-            { text: "网络编程", link: "/langs/java/17" },
-          ],
-        },
-      ],
-      "/langs/py/": [
-        {
-          text: "Python编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/langs/go/": [
-        {
-          text: "Go编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-      "/langs/sql/": [
-        {
-          text: "SQL编程语言",
-          collapsed: true,
-          items: [{ text: "1", link: "/program-langs/c/1/" }],
-        },
-      ],
-
-      "/langs/lua/": [
-        {
-          text: "Lua编程语言",
-          link: "/langs/lua/",
-        },
-      ],
-      "/db/sql/mysql/": [
-        {
-          text: "MySQL数据库",
-          // collapsed: false,
-          items: [
-            {
-              text: "MySQL学习笔记",
-              link: "/db/sql/mysql/MySQL学习笔记",
-            },
-          ],
-        },
-      ],
-      "/interviews/": [
-        {
-          text: "计算机网络",
-          link: "/interviews/network/",
-        },
-        {
-          text: "Java 面试题",
-          // collapsed: true,
-          items: [
-            { text: "基础", link: "/interviews/java/base.md" },
-            { text: "继承", link: "/interviews/java/extends.md" },
-            { text: "多态", link: "/interviews/java/polymorphism.md" },
-            { text: "集合", link: "/interviews/java/collection.md" },
-            { text: "反射", link: "/interviews/java/reflection.md" },
-            { text: "代理", link: "/interviews/java/proxy.md" },
-            { text: "注解", link: "/interviews/java/annotation.md" },
-            { text: "I/O", link: "/interviews/java/io.md" },
-            { text: "多线程", link: "/interviews/java/multi-thread.md" },
-            { text: "并发", link: "/interviews/java/concurrency.md" },
-            { text: "JVM", link: "/interviews/java/jvm.md" },
-          ],
-        },
-        {
-          text: "MySQL 面试题",
-          collapsed: false,
-          items: [{ text: "MySQL01", link: "/interviews/mysql/mysql.md" }],
-        },
-        {
-          text: "Redis 面试题",
-          collapsed: false,
-          items: [{ text: "Redis01", link: "/interviews/redis/redis.md" }],
-        },
-        {
-          text: "Spring Framework 面试题",
-          collapsed: false,
-          items: [{ text: "Spring01", link: "/interviews/spring/01.md" }],
-        },
-        {
-          text: "Spring MVC 面试题",
-          collapsed: false,
-          items: [
-            { text: "Spring MVC 01", link: "/interviews/springmvc/01.md" },
-          ],
-        },
-        {
-          text: "Spring Boot 面试题",
-          collapsed: false,
-          items: [
-            { text: "Spring Boot", link: "/interviews/springboot/01.md" },
-          ],
-        },
-        {
-          text: "Spring Cloud 面试题",
-          collapsed: false,
-          items: [
-            { text: "Spring Cloud 01", link: "/interviews/springcloud/01.md" },
-          ],
-        },
-      ],
-      "/interviews/scenes/": [
-        {
-          text: "场景面试题",
-          link: "/interviews/scenes/",
-        },
-      ],
-      // "/code/review/": [
-      //   {
-      //     text: "源码进阶",
-      //     collapsed: false,
-      //     items: [
-      //       { text: "redis", link: "/code/review/redis/" }],
-      //   },
-      // ],
-      "/code/review/redis/": [
-        {
-          text: "Redis源码解析",
-          collapsed: false,
-          items: [
-            { text: "第一讲", link: "/code/review/redis/1" },
-            { text: "第二讲", link: "/code/review/redis/2" },
-            { text: "第三讲", link: "/code/review/redis/3" },
-            { text: "第四讲", link: "/code/review/redis/4" },
-          ],
-        },
-      ],
-      // "/about":[
-      //   {
-      //     text: "test",
-      //     link: "/ttt"
-      //   }
-      // ]
-      "/mq/kafka/": [
-        {
-          text: "Kafka 快速入门",
-          link: "/mq/kafka/",
-        },
-      ],
-      "/mq/rocketmq/": [
-        {
-          text: "RocketMQ 快速入门",
-          link: "/mq/rocketmq/",
-        },
-      ],
-      "/middleware/es/": [
-        {
-          text: "Elastic Search",
-          link: "/middleware/es/",
-        },
-      ],
-      "/middleware/openresty/": [
-        {
-          text: "Open Resty",
-          link: "/middleware/openresty/",
-        },
-      ],
-    },
-
+    sidebar,
     lightModeSwitchTitle: "开灯",
     darkModeSwitchTitle: "关灯",
-
     socialLinks: [
       { icon: "github", link: "https://github.com/RoureYungLoo" },
       {

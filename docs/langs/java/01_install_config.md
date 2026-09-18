@@ -4,7 +4,7 @@
 
 老项目：jdk8
 
-新项目：jdk17
+新项目：jdk17, jdk21
 
 特殊项目：jdk11
 
@@ -24,8 +24,10 @@
 
 ## linux
 
-```
+```bash
+# 安装方式一
 yum install  https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
+# 安装方式二
 yum install -y java-17-openjdk
 ```
 
@@ -34,9 +36,12 @@ yum install -y java-17-openjdk
 ## linux
 
 ```bash
+# 下载软件包
 wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.tar.gz
+# 解压软件包
 tar -zxf jdk-17.0.12_linux-x64_bin.tar.gz -C /usr/local/
 
+# 配置环境变量
 cat >> /etc/profile << 'EOF'
 JAVA_HOME=/usr/local/jdk-17.0.12/
 # 一般不需要配置 CLASSPATH
@@ -45,5 +50,6 @@ PATH=$PATH:$JAVA_HOME/bin
 export PATH JAVA_HOME # CLASSPATH  
 EOF
 
+# 刷新环境变量
 source /etc/profile
 ```

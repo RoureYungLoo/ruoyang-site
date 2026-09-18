@@ -192,7 +192,7 @@ server
 - [Nginx源码分析_老码农zhuli的博客-CSDN博客](https://blog.csdn.net/initphp/category_9265172.html)
 - [Nginx开发从入门到精通 — Nginx开发从入门到精通 (taobao.org)](https://tengine.taobao.org/book/)
 - https://tengine.taobao.org/nginx_docs/cn/docs/
-- https://nginx.ac.cn/
+- [Nginx 文档](https://nginx.ac.cn)
 
 - [Core functionality (nginx.org)](http://nginx.org/en/docs/ngx_core_module.html#worker_priority)
 

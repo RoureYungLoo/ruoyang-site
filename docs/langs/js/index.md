@@ -8,23 +8,14 @@
 [发送HTTP请求的方法](https://cloud.tencent.com/developer/article/2061091)
 
 - 原生API
-
 - Ajax XMLHttpRequest
-
 - $.ajax
-
 - fetch
-
 - Axios
-
 - Angular HttpClient
-
 - XMLHttpRequest
-
 - SuperAgent
-
 - Ky
-
 - ...
 
 ## jQuery发送Ajax请求
@@ -196,7 +187,7 @@ https://ts.xcatliu.com/
 
 https://www.w3school.com.cn/js/index.asp
 
-https://zuoye.blog.csdn.net/article/details/126079743)
+https://zuoye.blog.csdn.net/article/details/126079743
 
 https://github.com/docsifyjs/docsify
 

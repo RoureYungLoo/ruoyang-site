@@ -278,3 +278,18 @@ TUN 模式在操作系统层面创建一个**虚拟三层网络设备**。
 > - **配置备份**：复杂的路由规则和客户端配置建议定期导出备份，以免重装系统后丢失分流逻辑。
 
 这份文档涵盖了代理生态的每一个核心角落，如果你需要特定工具（如 3X-UI 面板安装 或 Clash 分流规则编写）的深层配置示例，随时告诉我，我可以继续为你展开。😊
+
+
+
+**2026 年最值得关注的是 Mihomo、sing-box、Xray-core 三个。** 原版 Clash 已经退出主流维护，V2Ray-core 仍有用户但新项目里通常优先级低于 Xray。
+
+| 内核                 | 当前主流程度 | 主要特点                     | 常见协议                                                | 更适合                       |
+| -------------------- | ------------ | ---------------------------- | ------------------------------------------------------- | ---------------------------- |
+| **Mihomo**           | ⭐⭐⭐⭐⭐        | Clash 生态事实上的主力       | SS、VMess、VLESS、Trojan、TUIC、Hysteria2、WireGuard 等 | 桌面代理、规则分流、机场订阅 |
+| **sing-box**         | ⭐⭐⭐⭐⭐        | 新一代通用代理平台，架构现代 | VLESS、VMess、SS、Trojan、Hysteria2、TUIC、WireGuard 等 | 新客户端、跨平台、TUN        |
+| **Xray-core**        | ⭐⭐⭐⭐⭐        | V2Ray/Xray 体系主力          | VLESS、VMess、Trojan、Shadowsocks、REALITY、XHTTP 等    | 自建节点、VLESS/REALITY      |
+| **V2Ray-core**       | ⭐⭐⭐          | 老牌通用代理核心             | VMess、VLESS、SS、Trojan 等                             | 老配置、历史生态兼容         |
+| **shadowsocks-rust** | ⭐⭐⭐          | 专注 Shadowsocks，Rust 实现  | Shadowsocks                                             | 纯 SS 服务端/客户端          |
+| **Hysteria**         | ⭐⭐⭐          | QUIC/UDP 高速代理            | Hysteria2                                               | 高丢包、高延迟链路           |
+| **TUIC**             | ⭐⭐           | QUIC 类高速代理              | TUIC                                                    | 高延迟网络                   |
+| **Trojan-Go 等**     | ⭐⭐           | 单协议/专用实现              | Trojan 等                                               | 特定协议环境                 |

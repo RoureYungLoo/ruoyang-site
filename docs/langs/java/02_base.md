@@ -89,13 +89,11 @@ Java中，**源代码**被编译成**字节码**（bytecode），字节码需要
 
 Java成为一种跨平台的语言，进而实现“编写一次，到处运行”。
 
-![img](http://www.kdocs.cn/api/v3/office/copy/cHlLK2xJcXpBZVgxYURNUTFzT0Ivb3B2RE55YzFMaThHcWIzT1NEaE0rdnVnUi82NktTeXBhRlEyNnBBZU5HanVkMllRVndvcVpFNkMySUxDeGJSbVZaMEJ2dVpZVnZpNkpUaVFMMGg5Z3BhdVU0djgwRVVPY0gzZkYzTGExQVJyVEJPWkFLUHpGQ2srazR2bEo2dXcwcVo1dHNWTmNIVGp0anA2VnFwZnVIVmpCanlBbzk2R21BQUdleUdqOWtoQ29IVlJXOWJ4cVI5VUxBU3lFY1o2aEJoOUdEMDVWUWdNRVFtWjN1K2RxL1gxVWpzcFJLejFBUjBXQVg5V25VMEhUUUIzaXRraU9NPQ==/attach/object/FG3KT2Q7ABAHQ?)
+![img](imgs/cross_platform.png)
 
 ### JDK下载与安装
 
 https://www.oracle.com/java/technologies/downloads/
-
-![img](http://www.kdocs.cn/api/v3/office/copy/cHlLK2xJcXpBZVgxYURNUTFzT0Ivb3B2RE55YzFMaThHcWIzT1NEaE0rdnVnUi82NktTeXBhRlEyNnBBZU5HanVkMllRVndvcVpFNkMySUxDeGJSbVZaMEJ2dVpZVnZpNkpUaVFMMGg5Z3BhdVU0djgwRVVPY0gzZkYzTGExQVJyVEJPWkFLUHpGQ2srazR2bEo2dXcwcVo1dHNWTmNIVGp0anA2VnFwZnVIVmpCanlBbzk2R21BQUdleUdqOWtoQ29IVlJXOWJ4cVI5VUxBU3lFY1o2aEJoOUdEMDVWUWdNRVFtWjN1K2RxL1gxVWpzcFJLejFBUjBXQVg5V25VMEhUUUIzaXRraU9NPQ==/attach/object/VLRKT2Q7ABAHW?)
 
 ### Java IDE
 
@@ -103,39 +101,33 @@ https://www.oracle.com/java/technologies/downloads/
 
 https://www.eclipse.org/downloads/packages/
 
-![img](http://www.kdocs.cn/api/v3/office/copy/cHlLK2xJcXpBZVgxYURNUTFzT0Ivb3B2RE55YzFMaThHcWIzT1NEaE0rdnVnUi82NktTeXBhRlEyNnBBZU5HanVkMllRVndvcVpFNkMySUxDeGJSbVZaMEJ2dVpZVnZpNkpUaVFMMGg5Z3BhdVU0djgwRVVPY0gzZkYzTGExQVJyVEJPWkFLUHpGQ2srazR2bEo2dXcwcVo1dHNWTmNIVGp0anA2VnFwZnVIVmpCanlBbzk2R21BQUdleUdqOWtoQ29IVlJXOWJ4cVI5VUxBU3lFY1o2aEJoOUdEMDVWUWdNRVFtWjN1K2RxL1gxVWpzcFJLejFBUjBXQVg5V25VMEhUUUIzaXRraU9NPQ==/attach/object/P4W2V2Q7ADQDW?)
-
 #### Intellij IDEA
 
 https://www.jetbrains.com/zh-cn/idea/download/?section=windows
 
-![img](http://www.kdocs.cn/api/v3/office/copy/cHlLK2xJcXpBZVgxYURNUTFzT0Ivb3B2RE55YzFMaThHcWIzT1NEaE0rdnVnUi82NktTeXBhRlEyNnBBZU5HanVkMllRVndvcVpFNkMySUxDeGJSbVZaMEJ2dVpZVnZpNkpUaVFMMGg5Z3BhdVU0djgwRVVPY0gzZkYzTGExQVJyVEJPWkFLUHpGQ2srazR2bEo2dXcwcVo1dHNWTmNIVGp0anA2VnFwZnVIVmpCanlBbzk2R21BQUdleUdqOWtoQ29IVlJXOWJ4cVI5VUxBU3lFY1o2aEJoOUdEMDVWUWdNRVFtWjN1K2RxL1gxVWpzcFJLejFBUjBXQVg5V25VMEhUUUIzaXRraU9NPQ==/attach/object/MVN2V2Q7ACQCK?)
+**IDEA开发项目步骤：**
 
-***\*IDEA开发步骤：\****
+1. new Empty Project
 
-①new Empty Project
+2. new Module
 
-②new Module
+3. new Package
 
-③new Package
+4. new Class
 
-④new Class
-
-⑤编写代码并运行
-
-IDEA常用设置：字体、背景色、快捷键
+5. 编写代码并运行
 
 ## Java程序基本结构
 
-***\*开发步骤：\****
+**开发步骤：**
 
-1. ***\*编辑\****源程序
-2. ***\*编译\****源程序  `javac HelloWorld.java`
-3. ***\*执行\****程序  `java HelloWorld`
+1. **编辑**源程序代码
+2. **编译**源程序  `javac HelloWorld.java`
+3. **执行**程序  `java HelloWorld`
 
 HelloWorld
 
-```
+```java
 public class HelloWorld {
     public static void main(String[] args){
         System.out.println("Hello world");
@@ -143,7 +135,7 @@ public class HelloWorld {
 }
 ```
 
-***\*项目结构：\****工程 Project、模块 Mudule、包 Package、类 Class
+**项目层次结构：**工程 Project、模块 Mudule、包 Package、类 Class
 
 ### 编程要点
 
@@ -151,7 +143,7 @@ public class HelloWorld {
 - 类名，首字母大写
 - 方法名，首字母小写
 - 源文件名，和类名相同
-- 程序入口：`***\*public static void main(String[] args)\****`
+- 程序入口：**`public static void main(String[] args)`**
 
 ## 代码风格与注释
 
@@ -185,9 +177,9 @@ Kernighan_Ritchie风格
 
 #### 文档注释
 
-以/**开始，以*/结束的多行
+以`/**`开始，以`*/`结束的多行
 
-```
+```java
 // 单行注释
 /*
 多
@@ -219,33 +211,33 @@ Java有两大类型的变量：
 
 变量在使用前必须①先声明，然后②初始化：
 
-①声明变量：***\*类型名  变量名;\****
+①声明变量：**类型名  变量名**
 
-```
+```java
 int number;
 ```
 
 ②变量的初始化就是给变量赋初值：
 
-```
+```java
 number = 100;
 ```
 
 ③可以在声明的同时初始化变量：
 
-```
+```java
 int number = 100;
 ```
 
-***\*变量作用域\****
+**变量作用域**
 
-***\*常量\****
+**常量**
 
 ## 关键字与标识符
 
 #### 标识符
 
-identifier，为***\*变量\****、***\*方法\****和***\*类\****进行命名
+identifier，为**变量**、**方法**和**类**进行命名
 
 命名规则：
 
@@ -260,12 +252,12 @@ identifier，为***\*变量\****、***\*方法\****和***\*类\****进行命名
 
 命名风格（多单词）：
 
-- PascalCase，每个单词的首字母大写。***\*类\****、***\*接口\****用该方法命名
-- camelCase，第一个单词的首字母小写，其余单词的首字母大写，***\*变量\****、***\*方法\****用该方法命名
+- PascalCase，每个单词的首字母大写。**类**、**接口**用该方法命名
+- camelCase，第一个单词的首字母小写，其余单词的首字母大写，**变量**、**方法**用该方法命名
 
 #### 关键字
 
-```
+```java
 abstract    continue    for            new            switch
 assert        default        goto*        package        synchronized
 boolean        do            if            private        this
@@ -347,7 +339,7 @@ const      是关键字，但不能使用
 
 ## 数据类型
 
-![img](http://www.kdocs.cn/api/v3/office/copy/cHlLK2xJcXpBZVgxYURNUTFzT0Ivb3B2RE55YzFMaThHcWIzT1NEaE0rdnVnUi82NktTeXBhRlEyNnBBZU5HanVkMllRVndvcVpFNkMySUxDeGJSbVZaMEJ2dVpZVnZpNkpUaVFMMGg5Z3BhdVU0djgwRVVPY0gzZkYzTGExQVJyVEJPWkFLUHpGQ2srazR2bEo2dXcwcVo1dHNWTmNIVGp0anA2VnFwZnVIVmpCanlBbzk2R21BQUdleUdqOWtoQ29IVlJXOWJ4cVI5VUxBU3lFY1o2aEJoOUdEMDVWUWdNRVFtWjN1K2RxL1gxVWpzcFJLejFBUjBXQVg5V25VMEhUUUIzaXRraU9NPQ==/attach/object/6P2232Q7ADQE4?)
+![img](imgs/java_data_type.png)
 
 #### 字面值
 
@@ -355,9 +347,9 @@ const      是关键字，但不能使用
 
 | 字面值类型     | 解释                   | 示例                         |
 | -------------- | ---------------------- | ---------------------------- |
-| 基本类型字面值 | 基本类型的值的表示     | 123，3.456，true，false，'g' |
-| 字符串字面值   | 用双引号定界的字符序列 | "Hello World"                |
-| null字面值     | 引用类型的空字面值     | null                         |
+| 基本类型字面值 | 基本类型的值的表示     | `123`,`3.456`,`true`,`false`,`'g'` |
+| 字符串字面值   | 用双引号定界的字符序列 | `"Hello World"`                |
+| null字面值     | 引用类型的空字面值     | `null`                         |
 | 转义字面量     |                        | `\t \n`                      |
 
 char类型字面值必须用单引号引一个字符，不能为空
@@ -370,10 +362,10 @@ String类型字面值用双引号，内容可有可无
 
 | 数据类型 | 所占字节数 | 所占位数 | 取值范围                                                     |
 | -------- | ---------- | -------- | ------------------------------------------------------------ |
-| byte     | 1          | 8        | -27~27-1（-128~127）                                         |
-| short    | 2          | 16       | -215~215-1（-32768~32767）                                   |
-| int      | 4          | 32       | -231~231-1（-2147483648~2147483647) 21亿                     |
-| long     | 8          | 64       | -263~263-1（-9223372036854775808~9223372036854775807）19位数 |
+| byte     | 1          | 8        | -2^7^ ~ 2^7^-1（-128~127）                                         |
+| short    | 2          | 16       | -2^15^ ~ 2^15^-1（-32768~32767）                                   |
+| int      | 4          | 32       | -2^31^ ~ 2^31^-1（-2147483648~2147483647) 21亿                     |
+| long     | 8          | 64       | -2^63^ ~ 2^63^-1（-9223372036854775808~9223372036854775807）19位数 |
 
 整型字面值类型：
 
@@ -394,24 +386,24 @@ String类型字面值用双引号，内容可有可无
 1. 十进制数形式，例：3.14
 2. 科学计数法形式，例：4.5e+3
 
-***\**\*注意\*\**\***：浮点数的运算是不精确的，不适合做***\**\*财务金融\*\**\***计算，若需要精确无误的浮点计算，可以使用***\**\*BigDecimal\*\**\***类。
+**注意**：浮点数的运算是不精确的，不适合做**财务金融**计算，若需要精确无误的浮点计算，可以使用**BigDecimal**类。
 
-***\**\*下划线\*\**\***可以用在浮点型数和整型数（包括二进制、八进制、十六进制和十进制）的表示中，以增强代码可读性。
+**下划线**可以用在浮点型数和整型数（包括二进制、八进制、十六进制和十进制）的表示中，以增强代码可读性。
 
-```
+```java
 long a = 1237_519_803L;
 double d = 12.37_519_803d;
 ```
 
 #### 字符类型
 
-***\*字符\****是程序中可以出现的任何单个符号。
+**字符**是程序中可以出现的任何单个符号。
 
-Java使用Unicode为字符编码，Unicode字符集使用***\*两个字节（16位）\****为字符编码，可表示65 536个字符。
+Java使用Unicode为字符编码，Unicode字符集使用**两个字节（16位）**为字符编码，可表示65 536个字符。
 
-字面值用***\*单引号\****将字符括起来，大多数可见的字符都可用这种方式表示，如***\*'a'、'@'、'我'\****等。
+字面值用**单引号**将字符括起来，大多数可见的字符都可用这种方式表示，如**'a'、'@'、'我'**等。
 
-有些特殊字符用***\*转义序列\****来表示。用反斜杠（\）表示转义，如'\n'表示换行。
+有些特殊字符用**转义序列**来表示。用反斜杠（\）表示转义，如'\n'表示换行。
 
 | 转义字符 | 说明                  | 转义字符 | 说明                    |
 | -------- | --------------------- | -------- | ----------------------- |
@@ -450,19 +442,19 @@ Java程序中经常要使用字符串。字符串是字符序列，不属于基�
 | 运算符                |                                                         |                                  |
 | --------------------- | ------------------------------------------------------- | -------------------------------- |
 | 算数运算符（9个）     | 一元运算符（4个）                                       | 正,负,自增,自减，`+ - ++ --`     |
-| 二元运算符（5个）     | 求和/拼接,求差,求积,求商,求余，`+ - * / %`              |                                  |
+|| 二元运算符（5个）     | 求和/拼接,求差,求积,求商,求余，`+ - * / %`              |                                  |
 | 赋值运算符            | 简单赋值运算符                                          | 赋值，`=`                        |
-| 复合赋值运算符        | `+=，-=，*=，/=，%=，&=，|=`，自带***\**\*强转\*\**\*** |                                  |
+|| 复合赋值运算符        | `+=，-=，*=，/=，%=，&=，|=`，自带**强转** |                                  |
 | 关系运算符/比较运算符 | 比较结果为true/false                                    | `>，>=，<，<=，==，!=`           |
-| 三元运算符            | `? :`                                                   |                                  |
+|| 三元运算符            | `? :`                                                   |                                  |
 | 逻辑运算符            | 逻辑与、逻辑或、逻辑非、逻辑异或                        | `&   |   !  ^`，异或：不同为true |
-| 短路与、短路或        | `&&  ||`                                                |                                  |
+|| 短路与、短路或        | `&&  ||`                                                |                                  |
 | 位运算符              | 位逻辑运算                                              | `&  |  ~(取反) ^(异或)`          |
-| 位移位运算            | `<<  >>  >>>(无符号右移)`                               |                                  |
+|| 位移位运算            | `<<  >>  >>>(无符号右移)`                               |                                  |
 
 `+` : 优先进行数学运算，进行不了，则进行拼接运算
 
-```
+```java
 int a = 10;
 a = a++;
 System.out.println(a)
@@ -482,9 +474,9 @@ int c = a++ - a++ / b-- + a++;
 System.out.println(a + ":" + b + ":" + c);
 ```
 
-***\*逻辑运算符表格\****
+**逻辑运算符表格**
 
-| ***\**\*A\*\**\*** | ***\**\*B\*\**\*** | ***\**\*A&B\*\**\*** | ***\**\*A\|B\*\**\*** | ***\**\*!A\*\**\*** | ***\**\*A^B\*\**\*** | ***\**\*A&&B\*\**\*** | ***\**\*A\|\|B\*\**\*** |
+| A | B | A&B | A\|B | !A | A^B | A&&B | A\|\|B |
 | ------------------ | ------------------ | -------------------- | --------------------- | ------------------- | -------------------- | --------------------- | ----------------------- |
 | false              | false              | false                | false                 | true                | false                | false                 | false                   |
 | false              | true               | false                | true                  | true                | true                 | false                 | true                    |
@@ -497,9 +489,9 @@ System.out.println(a + ":" + b + ":" + c);
 
 短路或：A为false时才计算B
 
-***\**\*是否使用短路运算，取决于是否想让两边的表达式都执行\*\**\***
+**是否使用短路运算，取决于是否想让两边的表达式都执行**
 
-***\*位运算符表格\****
+**位运算符表格**
 
 | A    | B    | ~A   | A&B  | A\|B | A^B  |
 | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -510,7 +502,7 @@ System.out.println(a + ":" + b + ":" + c);
 
 ### 运算符优先级
 
-表达式中***\*出现多个运算符\****而又***\*没有用括号\****分隔时，先运算哪个后运算哪个。
+表达式中**出现多个运算符**而又**没有用括号**分隔时，先运算哪个后运算哪个。
 
 ### 运算符结合性
 
@@ -520,7 +512,7 @@ System.out.println(a + ":" + b + ":" + c);
 
 右结合：运算符优先结合右边的操作数。例：a+=b+=c，+=优先结合操作数c
 
-```
+```java
 double a = 10;
 double b = 1, c = 2, d = 0.5;
 System.out.println(a /= b /= c /= 0.5); // 40
@@ -542,11 +534,11 @@ System.out.println(a /= b /= c /= 0.5); // 40
 
 又称加宽转换，指将具有较少位数的数据类型转换为具有较多位数的数据类型。
 
-![img](http://www.kdocs.cn/api/v3/office/copy/cHlLK2xJcXpBZVgxYURNUTFzT0Ivb3B2RE55YzFMaThHcWIzT1NEaE0rdnVnUi82NktTeXBhRlEyNnBBZU5HanVkMllRVndvcVpFNkMySUxDeGJSbVZaMEJ2dVpZVnZpNkpUaVFMMGg5Z3BhdVU0djgwRVVPY0gzZkYzTGExQVJyVEJPWkFLUHpGQ2srazR2bEo2dXcwcVo1dHNWTmNIVGp0anA2VnFwZnVIVmpCanlBbzk2R21BQUdleUdqOWtoQ29IVlJXOWJ4cVI5VUxBU3lFY1o2aEJoOUdEMDVWUWdNRVFtWjN1K2RxL1gxVWpzcFJLejFBUjBXQVg5V25VMEhUUUIzaXRraU9NPQ==/attach/object/H36L72Q7ACADK?)
+![img](imgs/data_type_cast.png)
 
-表达式的最终结果类型由表达式中的***\*最高类型\****决定。
+表达式的最终结果类型由表达式中的**最高类型**决定。
 
-在表达式中，***\*byte、short、char\**** 是直接转换成***\*int\****类型参与运算的。
+在表达式中，**byte、short、char** 是直接转换成**int**类型参与运算的。
 
 byte、short、char参数学运算自动提升为int，
 
@@ -554,9 +546,9 @@ byte、short、char参数学运算自动提升为int，
 
 与自动类型转换相反，指将具有较多位数的数据类型转换为具有较少位数的数据类型。
 
-***\*赋值运算符（+=、-=、...）\****、***\*自增自减运算符(++、--)\****，自带强制类型转换
+**赋值运算符（+=、-=、...）**、**自增自减运算符(++、--)**，自带强制类型转换
 
-```
+```java
 double d = 200.5;
 byte b = (byte)d;    // 强制类型转换
 System.out.println(b);     // 输出-56
@@ -566,7 +558,7 @@ System.out.println(b);     // 输出-56
 
 ### 表达式类型提升
 
-```
+```java
 byte aa = 40;
 byte bb = 50;
 byte cc = a + b;             // 编译错误：不兼容的类型: 从int转换到byte可能会有损失
