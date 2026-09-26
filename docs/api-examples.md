@@ -2,48 +2,53 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# VitePress 内置功能示例
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+本页只使用 VitePress 自带的 Markdown 扩展，不依赖自定义组件或客户端脚本。
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+## 自定义容器
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+::: info 信息
+适合补充背景或上下文。
+:::
 
-const { theme, page, frontmatter } = useData()
-</script>
+::: tip 提示
+适合突出实践建议。
+:::
 
-## Results
+::: warning 注意
+适合提示可能产生的风险。
+:::
 
-### Theme Data
-<pre>{{ theme }}</pre>
+::: danger 警告
+适合标注高风险操作。
+:::
 
-### Page Data
-<pre>{{ page }}</pre>
+::: details 点击查看详情
+这里是默认折叠的补充内容。
+:::
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
+## 代码组
+
+::: code-group
+
+```sh [npm]
+npm run docs:dev
 ```
 
-<script setup>
-import { useData } from 'vitepress'
+```sh [pnpm]
+pnpm docs:dev
+```
 
-const { site, theme, page, frontmatter } = useData()
-</script>
+:::
 
-## Results
+## 表格
 
-### Theme Data
-<pre>{{ theme }}</pre>
+| 功能 | 写法 |
+| --- | --- |
+| 页面标题 | Markdown 一级标题 |
+| 目录层级 | Frontmatter 中的 `outline` |
+| 代码高亮 | 带语言标识的代码块 |
+| 站内搜索 | `themeConfig.search` 配置 |
 
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+更多用法请参阅 [VitePress Markdown 扩展](https://vitepress.dev/guide/markdown)。

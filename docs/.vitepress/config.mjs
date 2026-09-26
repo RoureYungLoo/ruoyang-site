@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import { sidebar } from "./sidebar/index.mjs";
 
 export default defineConfig({
-  title: "禄若阳的 Tech Notes",
+  title: "若阳的网站",
   srcExclude: [
     "testpkg/**",
     "code/review/redis/**",
@@ -40,82 +40,140 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "基础原理",
+        text: "基础知识",
         items: [
-          { text: "计算机网络", link: "/cs_base/net/" },
-          { text: "计算机组成原理", link: "/cs_base/poc/" },
-          { text: "操作系统", link: "/cs_base/os/" },
-          { text: "数据结构", link: "/cs_base/ds/" },
-          { text: "算法分析设计", link: "/cs_base/alg/" },
+          {
+            text: "计算机基础",
+            items: [
+              { text: "计算机网络", link: "/cs_base/net/" },
+              { text: "计算机组成原理", link: "/cs_base/poc/" },
+              { text: "操作系统", link: "/cs_base/os/" },
+            ],
+          },
+          {
+            text: "数据结构与算法",
+            items: [
+              { text: "数据结构", link: "/cs_base/ds/" },
+              { text: "算法分析与设计", link: "/cs_base/alg/" },
+              { text: "排序算法", link: "/algo/sort/" },
+            ],
+          },
         ],
       },
       {
         text: "编程语言",
         items: [
           {
-            text: " 前  端 ",
+            text: "Web 前端",
             items: [
               { text: "HTML", link: "/langs/html/" },
               { text: "CSS", link: "/langs/css/" },
-              { text: "JS", link: "/langs/js/" },
+              { text: "JavaScript", link: "/langs/js/" },
+              { text: "React", link: "/react/" },
             ],
           },
           {
-            text: " 后  端 ",
+            text: "后端与系统",
             items: [
+              { text: "Java", link: "/langs/java/" },
               { text: "C", link: "/langs/c/" },
               { text: "C++", link: "/langs/cpp/" },
-              { text: "Java", link: "/langs/java/" },
               { text: "Python", link: "/langs/py/" },
               { text: "Lua", link: "/langs/lua/" },
             ],
           },
         ],
       },
-      { text: "大数据", link: "/big_data/" },
       {
-        text: "数据库",
+        text: "后端技术",
         items: [
-          { text: "简介", link: "/db/" },
-          { text: "MySQL", link: "/db/sql/mysql/" },
-          { text: "Redis", link: "/db/nosql/redis/" },
-          { text: "MongoDB", link: "/db/nosql/mongodb/" },
+          {
+            text: "数据存储",
+            items: [
+              { text: "数据库概览", link: "/db/" },
+              { text: "MySQL", link: "/db/sql/mysql/" },
+              { text: "Redis", link: "/db/nosql/redis/" },
+              { text: "MongoDB", link: "/db/nosql/mongodb/" },
+            ],
+          },
+          {
+            text: "Java 生态",
+            items: [
+              { text: "Spring Framework", link: "/spring/base/" },
+              { text: "Spring Boot", link: "/spring/boot/" },
+              { text: "Spring Cloud", link: "/spring/cloud/" },
+            ],
+          },
+          {
+            text: "消息与中间件",
+            items: [
+              { text: "Kafka", link: "/mq/kafka/" },
+              { text: "RocketMQ", link: "/mq/rocketmq/" },
+              { text: "ElasticSearch", link: "/middleware/es/" },
+              { text: "Nginx", link: "/nginx/" },
+              { text: "OpenResty", link: "/middleware/openresty/" },
+            ],
+          },
         ],
       },
       {
-        text: "消息队列",
+        text: "工程实践",
         items: [
-          { text: "RocketMQ", link: "/mq/rocketmq/" },
-          { text: "Kafka", link: "/mq/kafka/" },
+          {
+            text: "开发与构建工具",
+            items: [
+              { text: "Git", link: "/vercon/git/" },
+              { text: "Maven", link: "/build_tool/maven/" },
+              { text: "Gradle", link: "/build_tool/gradle/" },
+            ],
+          },
+          {
+            text: "工程方法与工具",
+            items: [
+              { text: "软件工程", link: "/se/" },
+              { text: "源码阅读", link: "/code/review/" },
+              { text: "API 测试工具", link: "/gui/" },
+              { text: "原型设计工具", link: "/ui/" },
+            ],
+          },
+          {
+            text: "专题方向",
+            items: [
+              { text: "大数据", link: "/big_data/" },
+              { text: "AI Agent", link: "/ai/agent/" },
+              { text: "程序化广告", link: "/programming_advertising/" },
+            ],
+          },
         ],
       },
       {
-        text: "Spring系列",
+        text: "面试复习",
         items: [
-          { text: "Spring Framework", link: "/spring/base/" },
-          { text: "Spring Boot", link: "/spring/boot/" },
-          { text: "Spring Cloud", link: "/spring/cloud/" },
+          { text: "面试复习总览", link: "/interviews/" },
+          {
+            text: "基础与语言",
+            items: [
+              { text: "计算机网络", link: "/interviews/network/" },
+              { text: "Java", link: "/interviews/java/base" },
+            ],
+          },
+          {
+            text: "数据与场景",
+            items: [
+              { text: "MySQL", link: "/interviews/mysql/mysql" },
+              { text: "Redis", link: "/interviews/redis/redis" },
+              { text: "场景题", link: "/interviews/scenes/" },
+            ],
+          },
         ],
       },
       {
-        text: "DevOps",
+        text: "本站",
         items: [
-          { text: "Git", link: "/vercon/git/" },
+          { text: "最近更新", link: "/latest" },
+          { text: "关于本站", link: "/about" },
         ],
       },
-      {
-        text: "中间件",
-        items: [
-          { text: "ElasticSearch", link: "/middleware/es/" },
-          { text: "Open Resty", link: "/middleware/openresty/" },
-        ],
-      },
-      {
-        text: "必备算法",
-        items: [{ text: "排序算法", link: "/algo/sort/" }],
-      },
-      { text: "面试题", link: "/interviews/" },
-      { text: "关于", link: "/about" },
     ],
     sidebar,
     lightModeSwitchTitle: "开灯",
