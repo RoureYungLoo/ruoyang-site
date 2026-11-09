@@ -14,5 +14,5 @@ Spring Boot 通过自动配置、Starter 依赖和内嵌服务器简化 Spring �
 
 ## 下一步
 
-- [Spring Framework](../base/)
+- [Spring Framework](../framework/)
 - [Spring Cloud](../cloud/)

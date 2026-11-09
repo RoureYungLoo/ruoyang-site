@@ -1,12 +1,20 @@
+import { generateSidebar } from "./generate.mjs";
+
 export const middlewareSidebar = {
-  "/mq/kafka/": [{ text: "Kafka 快速入门", link: "/mq/kafka/" }],
-  "/mq/rocketmq/": [
-    { text: "RocketMQ 快速入门", link: "/mq/rocketmq/" },
-  ],
-  "/middleware/es/": [
-    { text: "Elastic Search", link: "/middleware/es/" },
-  ],
-  "/middleware/openresty/": [
-    { text: "Open Resty", link: "/middleware/openresty/" },
-  ],
+  "/message-queues/kafka/": generateSidebar({
+    directory: "message-queues/kafka",
+    base: "/message-queues/kafka/",
+  }),
+  "/message-queues/rocketmq/": generateSidebar({
+    directory: "message-queues/rocketmq",
+    base: "/message-queues/rocketmq/",
+  }),
+  "/middleware/elasticsearch/": generateSidebar({
+    directory: "middleware/elasticsearch",
+    base: "/middleware/elasticsearch/",
+  }),
+  "/middleware/openresty/": generateSidebar({
+    directory: "middleware/openresty",
+    base: "/middleware/openresty/",
+  }),
 };

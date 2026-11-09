@@ -1,28 +1,11 @@
 import { defineConfig } from "vitepress";
+import { srcExclude } from "./content.mjs";
+import { nav } from "./nav.mjs";
 import { sidebar } from "./sidebar/index.mjs";
 
 export default defineConfig({
   title: "若阳的网站",
-  srcExclude: [
-    "testpkg/**",
-    "code/review/redis/**",
-    "cs_base/alg/{01,02,algorithm_analysis_and_design}.md",
-    "cs_base/ds/{data_structures,hash_table,search,sort}.md",
-    "cs_base/net/network.md",
-    "cs_base/os/operating_systems.md",
-    "cs_base/poc/principles_of_computers.md",
-    "db/nosql/valkey/index.md",
-    "db/sql/sqlserver/index.md",
-    "interviews/java/{annotation,concurrency,extends,io,polymorphism,proxy,reflection}.md",
-    "interviews/bases/index.md",
-    "langs/{csharp,go,sql,ts}/index.md",
-    "langs/cpp/10-C++新特性.md",
-    "langs/java/Java.md",
-    "mq/{activemq,apollo,rabbitmq,zeromq}/index.md",
-    "project/index.md",
-    "seaeng/{elastic,lucene}/index.md",
-    "vercon/svn/index.md",
-  ],
+  srcExclude,
   head: [
     [
       "link",
@@ -37,144 +20,7 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-    nav: [
-      { text: "首页", link: "/" },
-      {
-        text: "基础知识",
-        items: [
-          {
-            text: "计算机基础",
-            items: [
-              { text: "计算机网络", link: "/cs_base/net/" },
-              { text: "计算机组成原理", link: "/cs_base/poc/" },
-              { text: "操作系统", link: "/cs_base/os/" },
-            ],
-          },
-          {
-            text: "数据结构与算法",
-            items: [
-              { text: "数据结构", link: "/cs_base/ds/" },
-              { text: "算法分析与设计", link: "/cs_base/alg/" },
-              { text: "排序算法", link: "/algo/sort/" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "编程语言",
-        items: [
-          {
-            text: "Web 前端",
-            items: [
-              { text: "HTML", link: "/langs/html/" },
-              { text: "CSS", link: "/langs/css/" },
-              { text: "JavaScript", link: "/langs/js/" },
-              { text: "React", link: "/react/" },
-            ],
-          },
-          {
-            text: "后端与系统",
-            items: [
-              { text: "Java", link: "/langs/java/" },
-              { text: "C", link: "/langs/c/" },
-              { text: "C++", link: "/langs/cpp/" },
-              { text: "Python", link: "/langs/py/" },
-              { text: "Lua", link: "/langs/lua/" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "后端技术",
-        items: [
-          {
-            text: "数据存储",
-            items: [
-              { text: "数据库概览", link: "/db/" },
-              { text: "MySQL", link: "/db/sql/mysql/" },
-              { text: "Redis", link: "/db/nosql/redis/" },
-              { text: "MongoDB", link: "/db/nosql/mongodb/" },
-            ],
-          },
-          {
-            text: "Java 生态",
-            items: [
-              { text: "Spring Framework", link: "/spring/base/" },
-              { text: "Spring Boot", link: "/spring/boot/" },
-              { text: "Spring Cloud", link: "/spring/cloud/" },
-            ],
-          },
-          {
-            text: "消息与中间件",
-            items: [
-              { text: "Kafka", link: "/mq/kafka/" },
-              { text: "RocketMQ", link: "/mq/rocketmq/" },
-              { text: "ElasticSearch", link: "/middleware/es/" },
-              { text: "Nginx", link: "/nginx/" },
-              { text: "OpenResty", link: "/middleware/openresty/" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "工程实践",
-        items: [
-          {
-            text: "开发与构建工具",
-            items: [
-              { text: "Git", link: "/vercon/git/" },
-              { text: "Maven", link: "/build_tool/maven/" },
-              { text: "Gradle", link: "/build_tool/gradle/" },
-            ],
-          },
-          {
-            text: "工程方法与工具",
-            items: [
-              { text: "软件工程", link: "/se/" },
-              { text: "源码阅读", link: "/code/review/" },
-              { text: "API 测试工具", link: "/gui/" },
-              { text: "原型设计工具", link: "/ui/" },
-            ],
-          },
-          {
-            text: "专题方向",
-            items: [
-              { text: "大数据", link: "/big_data/" },
-              { text: "AI Agent", link: "/ai/agent/" },
-              { text: "程序化广告", link: "/programming_advertising/" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "面试复习",
-        items: [
-          { text: "面试复习总览", link: "/interviews/" },
-          {
-            text: "基础与语言",
-            items: [
-              { text: "计算机网络", link: "/interviews/network/" },
-              { text: "Java", link: "/interviews/java/base" },
-            ],
-          },
-          {
-            text: "数据与场景",
-            items: [
-              { text: "MySQL", link: "/interviews/mysql/mysql" },
-              { text: "Redis", link: "/interviews/redis/redis" },
-              { text: "场景题", link: "/interviews/scenes/" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "本站",
-        items: [
-          { text: "最近更新", link: "/latest" },
-          { text: "关于本站", link: "/about" },
-        ],
-      },
-    ],
+    nav,
     sidebar,
     lightModeSwitchTitle: "开灯",
     darkModeSwitchTitle: "关灯",

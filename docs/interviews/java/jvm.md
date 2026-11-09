@@ -1,3 +1,8 @@
+---
+title: Java JVM
+order: 40
+---
+
 # Java JVM
 ## 类加载器是什么?类加载器有什么作用?
 类加载器是动态加载类的字节码.class文件到JVM方法区的对象, 通过类加载器还可以读取classpath下的资源.
